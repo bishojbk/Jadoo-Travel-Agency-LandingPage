@@ -1,0 +1,37 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  margin: 40px 0;
+
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo {
+    flex: 2;
+  }
+
+  .navbar-wrapper {
+    flex: 2;
+  }
+
+  .login-wrapper {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .dropdown-wrapper {
+      span {
+        font-weight: 500;
+      }
+
+      img {
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

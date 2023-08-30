@@ -1,0 +1,87 @@
+.banner-wrapper {
+  position: relative;
+
+  .banner-bg {
+    position: absolute;
+    opacity: 0.3;
+    background: #d5aee4;
+    filter: blur(75px);
+    width: 480px;
+    height: 490px;
+    border-radius: 500px;
+    left: -400px;
+    top: -50px;
+  }
+
+  .img-diamond {
+    position: absolute;
+    right: 0;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    padding: 80px 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &_text {
+      padding: 100px 0;
+
+      p {
+        margin: 20px 0;
+      }
+
+      span {
+        position: relative;
+
+        &::before {
+          content: url("../../public/svg/line.svg");
+          position: absolute;
+          top: 10px;
+          left: -30px;
+        }
+      }
+
+      .details {
+        line-height: 30px;
+        margin: 0;
+      }
+
+      .btn-section {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        .img-play {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &_images {
+      margin-top: 25px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: url("../../public/svg/plane1.svg");
+        top: 50px;
+        left: 100px;
+      }
+
+      &::after {
+        position: absolute;
+        content: url("../../public/svg/plane2.svg");
+        top: 60px;
+        right: 1px;
+      }
+
+      .img-girl {
+        position: relative;
+        // width: 100%;
+        z-index: 10;
+      }
+    }
+  }
+}

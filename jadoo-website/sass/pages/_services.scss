@@ -1,0 +1,17 @@
+.services-wrapper {
+  padding: 0;
+  position: relative;
+
+  .img-stars {
+    position: absolute;
+    right: 50px;
+  }
+
+  .services-header {
+    text-align: center;
+
+    p {
+      margin: 20px 0;
+    }
+  }
+}
