@@ -26,7 +26,7 @@
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 20px;
   position: relative;
 
   .grid-item {
@@ -34,7 +34,7 @@
   }
 
   .img-tower {
-    width: 100%;
+    width: 90%;
     object-fit: cover;
     border-radius: 24px;
   }
@@ -44,7 +44,7 @@
     border-radius: 0px 0px 24px 24px;
     background: #fdfdfd;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     box-shadow: var(--box-shadow);
   }
 
@@ -68,7 +68,7 @@
       position: absolute;
       content: url("../../public/svg/wire.svg");
       bottom: 30px;
-      right: -60px;
+      right: -5px;
       z-index: -1;
     }
   }

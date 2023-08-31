@@ -1,0 +1,141 @@
+.booking-section {
+  display: grid;
+  grid-template-areas: "first second";
+  grid-template-columns: 1.6fr 1.4fr;
+  gap: 180px;
+
+  .booking-section-text {
+    grid-area: first;
+
+    .booking-header {
+      p {
+        text-transform: capitalize;
+        margin: 20px 0;
+      }
+    }
+    .booking-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin: 40px 0;
+
+      span {
+        font-weight: 700;
+      }
+
+      p {
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  }
+
+  .booking-section-image {
+    grid-area: second;
+    position: relative;
+
+    .ellipse-section {
+      border-radius: 367px;
+      opacity: 0.5;
+      background: #59b1e6;
+      filter: blur(75px);
+      width: 354px;
+      height: 367px;
+      left: 100px;
+      top: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .ongoingtrip-section {
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: var(--box-shadow);
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 20px 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 150px;
+      right: 0px;
+
+      .temple {
+        border-radius: 50%;
+        margin-top: -40px;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      span.details {
+        color: #84829a;
+      }
+
+      p.details {
+        margin: 0 0 5px;
+        font-weight: 500;
+        color: #080809;
+      }
+
+      .text-color {
+        margin: 0;
+
+        span.blue {
+          color: #8a79df;
+          margin: 0;
+        }
+
+        span.completed {
+          color: #080809;
+        }
+      }
+
+      .borderline {
+        margin: 0;
+      }
+    }
+
+    .card {
+      width: -moz-fit-content;
+      width: fit-content;
+      border-radius: 26px;
+      background: #fff;
+      box-shadow: var(--box-shadow);
+      margin: 50px 0;
+      padding: 30px;
+
+      .img-girlstanding {
+        border-radius: 24px;
+      }
+
+      .header-tag {
+        color: black;
+        font-weight: 500;
+        margin: 15px 0;
+      }
+
+      .details {
+        color: #84829a;
+      }
+
+      .svg-section {
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+      }
+
+      .people {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+      }
+    }
+  }
+}

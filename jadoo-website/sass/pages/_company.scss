@@ -1,0 +1,19 @@
+.company-section {
+  display: flex;
+  padding: 100px 0;
+  align-items: center;
+  justify-content: space-between;
+
+  .expedia-wrapper {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    width: -moz-fit-content;
+    width: fit-content;
+
+    img {
+      display: block;
+    }
+  }
+}
