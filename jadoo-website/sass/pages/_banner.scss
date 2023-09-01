@@ -62,26 +62,6 @@
     &_images {
       margin-top: 25px;
       position: relative;
-
-      &::before {
-        position: absolute;
-        content: url("../../public/svg/plane1.svg");
-        top: 50px;
-        left: 100px;
-      }
-
-      &::after {
-        position: absolute;
-        content: url("../../public/svg/plane2.svg");
-        top: 60px;
-        right: 1px;
-      }
-
-      .img-girl {
-        position: relative;
-        // width: 100%;
-        z-index: 10;
-      }
     }
   }
 }

@@ -52,12 +52,38 @@
       gap: 50px;
 
       .input-section {
-        border-radius: 10px;
-        background: white;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 20px 250px 20px 30px;
+        position: relative;
+
+        .img-email {
+          position: absolute;
+          z-index: 55;
+          top: 22px;
+          left: 22px;
+        }
+        input {
+          border-radius: 10px;
+          background: white;
+          gap: 10px;
+          padding: 20px 250px 20px 30px;
+          outline: none;
+          border: none;
+          width: 100%;
+          box-sizing: border-box;
+          position: relative;
+
+          &::placeholder {
+            color: #39425d;
+            opacity: 0.8;
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 0px;
+            position: absolute;
+            left: 52px;
+          }
+        }
+        label {
+          display: none;
+        }
 
         span {
           color: #39425d;
