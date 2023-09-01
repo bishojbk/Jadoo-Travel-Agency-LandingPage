@@ -5,18 +5,27 @@
   text-align: center;
   gap: 50px;
 
-  .item2 {
+  .grid-item {
+    cursor: pointer;
     position: relative;
     padding: 0 50px;
-    border-radius: 36px;
-    background: #fff;
-    box-shadow: var(--box-shadow);
+    transition: transform 0.2s ease-in-out;
 
-    &::after {
+    &:hover {
+      transform: scale(1.01);
+      padding: 0 50px;
+      border-radius: 36px;
+      background: #fff;
+      box-shadow: var(--box-shadow);
+      z-index: 1;
+    }
+
+    &:hover::before {
       position: absolute;
       content: url("../../public/svg/rectangle.svg");
       left: -50px;
       bottom: -20px;
+      transform: scale(1.01);
       z-index: -1;
     }
   }

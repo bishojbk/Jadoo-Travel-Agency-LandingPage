@@ -26,8 +26,21 @@
       }
     }
 
+    .dots-section {
+      display: flex;
+      gap: 30px;
+    }
+
     .dots {
       cursor: pointer;
+      background: rgb(190, 187, 187);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+
+      &:active {
+        background: black;
+      }
     }
   }
 
