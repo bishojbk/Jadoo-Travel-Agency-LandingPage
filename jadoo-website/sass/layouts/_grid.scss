@@ -3,32 +3,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
-  gap: 50px;
-
-  .grid-item {
-    cursor: pointer;
-    position: relative;
-    padding: 0 50px;
-    transition: transform 0.2s ease-in-out;
-
-    &:hover {
-      transform: scale(1.01);
-      padding: 0 50px;
-      border-radius: 36px;
-      background: #fff;
-      box-shadow: var(--box-shadow);
-      z-index: 1;
-    }
-
-    &:hover::before {
-      position: absolute;
-      content: url("../../public/svg/rectangle.svg");
-      left: -50px;
-      bottom: -20px;
-      transform: scale(1.01);
-      z-index: -1;
-    }
-  }
+  gap: 80px;
 }
 
 .destination-grid {
@@ -37,48 +12,4 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   position: relative;
-
-  .grid-item {
-    position: relative;
-  }
-
-  .img-tower {
-    width: 90%;
-    object-fit: cover;
-    border-radius: 24px;
-  }
-
-  .place-details {
-    position: absolute;
-    border-radius: 0px 0px 24px 24px;
-    background: #fdfdfd;
-    bottom: 0;
-    width: 90%;
-    box-shadow: var(--box-shadow);
-  }
-
-  .img-details {
-    padding: 20px 20px 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .trip-details {
-    padding: 0 20px 45px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .item3 {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: url("../../public/svg/wire.svg");
-      bottom: 30px;
-      right: -5px;
-      z-index: -1;
-    }
-  }
 }

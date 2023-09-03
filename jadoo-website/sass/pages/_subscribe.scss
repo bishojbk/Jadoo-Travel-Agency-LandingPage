@@ -1,17 +1,16 @@
 .subscribe-wrapper {
   padding: 100px 0;
-  position: relative;
 
   .stars {
     position: absolute;
-    bottom: 30px;
-    right: 125px;
+    bottom: -72px;
+    right: -100px;
   }
 
   .bluearrow {
     position: absolute;
-    right: 200px;
-    top: 80px;
+    top: -30px;
+    right: -20px;
     z-index: 5;
   }
 
@@ -60,6 +59,7 @@
           top: 22px;
           left: 22px;
         }
+
         input {
           border-radius: 10px;
           background: white;
@@ -92,5 +92,9 @@
         }
       }
     }
+  }
+
+  .msg-success {
+    visibility: hidden;
   }
 }

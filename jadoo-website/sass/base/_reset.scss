@@ -14,3 +14,15 @@ li {
 a {
   text-decoration: none;
 }
+
+select {
+  border-width: 0px;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}

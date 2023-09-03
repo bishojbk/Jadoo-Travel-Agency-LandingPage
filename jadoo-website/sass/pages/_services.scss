@@ -1,10 +1,14 @@
 .services-wrapper {
-  padding: 0;
+  padding: 50px 0 100px;
   position: relative;
+
+  .container {
+    position: relative;
+  }
 
   .img-stars {
     position: absolute;
-    right: 50px;
+    right: -180px;
   }
 
   .services-header {
@@ -13,5 +17,55 @@
     p {
       margin: 20px 0;
     }
+  }
+
+  .services-grid {
+    .grid-item {
+      cursor: pointer;
+      position: relative;
+      padding: 0 30px;
+      transition: transform 0.2s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      &:hover {
+        transform: scale(1.01);
+        padding: 0 30px;
+        border-radius: 36px;
+        background: #fff;
+        box-shadow: var(--box-shadow);
+        z-index: 1;
+      }
+    }
+    .item2 {
+      position: relative;
+      .grid-item-images {
+        img {
+          margin-top: -40px;
+        }
+      }
+
+      .grid-item-info {
+        margin-top: -40px;
+      }
+    }
+
+    .item4 {
+      .grid-item-info {
+        margin-top: 5px;
+      }
+    }
+
+    .img-rectangle {
+      position: absolute;
+      bottom: -50px;
+      left: -70px;
+      z-index: -1;
+    }
+  }
+
+  .xsm-header {
+    font-family: "Open Sans", "sans-serif";
   }
 }

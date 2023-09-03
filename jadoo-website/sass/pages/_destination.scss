@@ -1,11 +1,67 @@
 .destination-wrapper {
-  padding: 200px 0;
+  padding: 100px 0;
 
   .destination-header {
     text-align: center;
 
     p {
       margin: 20px 0;
+    }
+  }
+
+  .grid-item {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  .img-tower {
+    width: 90%;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+
+  .place-details {
+    position: absolute;
+    border-radius: 0px 0px 24px 24px;
+    background: #fdfdfd;
+    bottom: 0;
+    width: 90%;
+    box-shadow: var(--box-shadow);
+  }
+
+  .img-details {
+    padding: 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trip-details {
+    padding: 0 20px 45px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .trip {
+      color: #5e6282;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .item3 {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: url("../../public/svg/wire.svg");
+      bottom: 30px;
+      right: -5px;
+      z-index: -1;
     }
   }
 }

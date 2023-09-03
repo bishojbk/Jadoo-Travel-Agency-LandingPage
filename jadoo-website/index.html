@@ -18,6 +18,13 @@
       href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--HEADER SECTION-->
@@ -27,24 +34,26 @@
           <img src="./public/svg/logo.svg" alt="company-logo" />
         </div>
 
-        <div class="navbar-wrapper">
-          <nav>
-            <ul class="nav__links">
-              <li class="nav__items"><a href="jadoo.com">Destinations</a></li>
-              <li class="nav__items"><a href="jadoo.com">Hotels</a></li>
-              <li class="nav__items"><a href="jadoo.com">Flights</a></li>
-              <li class="nav__items"><a href="jadoo.com">Bookings</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="navbar-wrapper">
+          <ul class="nav__links">
+            <li class="nav__items"><a href="#">Destinations</a></li>
+            <li class="nav__items"><a href="#">Hotels</a></li>
+            <li class="nav__items"><a href="#">Flights</a></li>
+            <li class="nav__items"><a href="#">Bookings</a></li>
+          </ul>
+        </nav>
 
         <div class="login-wrapper">
-          <a href="jaddo.com" class="btn-login">Login</a>
-          <a href="jaddo.com" class="btn-register">Sign Up</a>
+          <a href="#" class="btn-login">Login</a>
+          <a href="#" class="btn-register">Sign Up</a>
 
-          <div class="dropdown-wrapper">
-            <span>EN</span>
-            <img src="./public/svg/downarrow.svg" alt="down-arrow" />
+          <div class="lngselect">
+            <label for="languageSelect">EN</label>
+            <select id="languageSelect">
+              <option value="en">EN</option>
+              <option value="nep">NP</option>
+              <option value="hin">SP</option>
+            </select>
           </div>
         </div>
       </div>
@@ -56,12 +65,14 @@
 
       <section class="banner-wrapper">
         <div class="banner-bg"></div>
-        <img
-          src="./public/svg/diamond.svg"
-          class="img-diamond"
-          alt="bg-diamond"
-        />
+
         <div class="container">
+          <img
+            src="./public/svg/diamond.svg"
+            class="img-diamond"
+            alt="bg-diamond"
+          />
+
           <div class="hero-wrapper">
             <div class="hero-wrapper_text">
               <p class="hero-info">Best Destinations around the world</p>
@@ -75,15 +86,13 @@
                 they west hard for the.
               </p>
               <div class="btn-section">
-                <a href="jadoo.com" class="btn-hero">Find out more</a>
+                <a href="#" class="btn-hero">Find out more</a>
 
-                <img
-                  src="./public/svg/playbtn.svg"
-                  alt="play"
-                  class="img-play"
-                />
+                <div class="img-play">
+                  <img src="./public/images/play.png" alt="play-btn" />
+                </div>
 
-                <a href="jadoo.com" class="btn-play details"> Play Demo</a>
+                <a href="#" class="btn-play details"> Play Demo</a>
               </div>
             </div>
 
@@ -91,7 +100,7 @@
               <img
                 src="./public/svg/GirlPlanes.svg"
                 alt="girl"
-                class="img-girl"
+                class="banner-img"
               />
             </div>
           </div>
@@ -100,52 +109,75 @@
 
       <!--SERVICES SECTION-->
       <section class="services-wrapper">
-        <img src="./public/svg/stars.svg" alt="stars" class="img-stars" />
         <div class="container">
+          <img src="./public/svg/stars.svg" alt="stars" class="img-stars" />
           <div class="services-header">
             <span class="header-tag">CATEGORY</span>
             <p class="sm-header">We Offer Best Services</p>
           </div>
           <div class="services-grid">
             <div class="grid-item item1">
-              <img src="./public/svg/dish.svg" alt="dish" class="img-dish" />
-              <span class="xsm-header">Calculated Weather </span>
-              <p class="details">
-                Built Wicket longer admire do barton vanity itself do in it.
-              </p>
+              <div class="grid-item-images">
+                <img src="./public/svg/dish.svg" alt="dish" class="img-dish" />
+              </div>
+
+              <div class="grid-item-info">
+                <span class="xsm-header">Calculated Weather </span>
+                <p class="details">
+                  Built Wicket longer admire do barton vanity itself do in it.
+                </p>
+              </div>
             </div>
 
-            <!-- <div class="grid-item item2">
+            <div class="grid-item item2">
+              <div class="grid-item-images">
+                <img
+                  src="./public/svg/plane.svg"
+                  alt="planet"
+                  class="img-planet"
+                />
+              </div>
+              <div class="grid-item-info">
+                <span class="xsm-header">Best Flights</span>
+                <p class="details">
+                  Engrossed listening. Park gate sell they west hard for the.
+                </p>
+              </div>
+
               <img
-                src="./public/images/plane.png"
-                alt="dish"
-                class="img-plane"
+                src="./public/svg/rectangle.svg"
+                alt="rectangle"
+                class="img-rectangle"
               />
-              <span class="xsm-header">Best Flights</span>
-              <p class="details">
-                Engrossed listening. Park gate sell they west hard for the.
-              </p>
-            </div> -->
+            </div>
 
             <div class="grid-item item3">
-              <img src="./public/svg/mic.svg" alt="dish" class="img-mic" />
-              <span class="xsm-header">Local Events</span>
-              <p class="details">
-                Barton vanity itself do in it. Preferd to men it engrossed
-                listening.
-              </p>
+              <div class="grid-item-images">
+                <img src="./public/svg/mic.svg" alt="dish" class="img-mic" />
+              </div>
+              <div class="grid-item-info">
+                <span class="xsm-header">Local Events</span>
+                <p class="details">
+                  Barton vanity itself do in it. Preferd to men it engrossed
+                  listening.
+                </p>
+              </div>
             </div>
 
             <div class="grid-item item4">
-              <img
-                src="./public/svg/setting.svg"
-                alt="dish"
-                class="img-setting"
-              />
-              <span class="xsm-header">Customization </span>
-              <p class="details">
-                We deliver outsourced aviation services for military customers
-              </p>
+              <div class="grid-item-images">
+                <img
+                  src="./public/svg/setting.svg"
+                  alt="dish"
+                  class="img-setting"
+                />
+              </div>
+              <div class="grid-item-info">
+                <span class="xsm-header">Customization </span>
+                <p class="details">
+                  We deliver outsourced aviation services for military customers
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -176,7 +208,7 @@
 
                 <div class="trip-details">
                   <img src="./public/svg/arrow.svg" alt="arrow" />
-                  <span class="details trip"> 10 Days Trip </span>
+                  <span class="trip"> 10 Days Trip </span>
                 </div>
               </div>
             </div>
@@ -196,7 +228,7 @@
 
                 <div class="trip-details">
                   <img src="./public/svg/arrow.svg" alt="arrow" />
-                  <span class="details trip"> 12 Days Trip </span>
+                  <span class="trip">12 Days Trip</span>
                 </div>
               </div>
             </div>
@@ -215,7 +247,7 @@
 
                 <div class="trip-details">
                   <img src="./public/svg/arrow.svg" alt="arrow" />
-                  <span class="details trip"> 28 Days Trip </span>
+                  <span class="trip"> 28 Days Trip </span>
                 </div>
               </div>
             </div>
@@ -321,13 +353,15 @@
 
       <!--TESTIMONIALS SECTION-->
       <section class="testimonials-wrapper">
-        <img
-          src="./public/svg/pagination.svg"
-          alt="arrows"
-          class="img-pagination"
-        />
-
         <div class="container testimonials-section">
+          <div class="pagination">
+            <img
+              src="./public/images/upload.png"
+              alt="arrows"
+              class="img-up opacity"
+            />
+            <img src="./public/images/down.png" alt="arrows" class="img-down" />
+          </div>
           <div class="testimonials-section-text">
             <div class="testimonials-header">
               <span class="header-tag">TESTIMONIALS </span>
@@ -335,37 +369,38 @@
             </div>
 
             <div class="dots-section">
-              <div class="dots">
-                <!-- <img src="./public//svg/dots.svg" alt="dots" /> -->
-              </div>
+              <div class="dots dot1 active"></div>
 
-              <div class="dots">
-                <!-- <img src="./public//svg/dots.svg" alt="dots" /> -->
-              </div>
+              <div class="dots dot2"></div>
 
-              <div class="dots">
-                <!-- <img src="./public//svg/dots.svg" alt="dots" /> -->
-              </div>
+              <div class="dots dot3"></div>
             </div>
           </div>
 
           <div class="testimonials-section-people">
-            <img src="./public/images/Man.png" alt="man" class="img-man" />
-            <div class="info-section">
-              <p class="details info">
-                “On the Windows talking painted pasture yet its express parties
-                use. Sure last upon he same as knew next. Of believed or
-                diverted no.”
-              </p>
-
-              <span class="details">Mike taylor</span>
-              <p class="details place">Lahore, Pakistan</p>
+            <div class="cards card1">
+              <img src="./public/images/Man.png" alt="man" class="img-man" />
+              <div class="info-section">
+                <p class="details info">
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
+                <span class="details name">Mike taylor</span>
+                <p class="details place">Lahore, Pakistan</p>
+              </div>
             </div>
 
-            <div class="company-name-section">
-              <div>
+            <div class="cards card2">
+              <img src="./public/images/Man.png" alt="man" class="img-man" />
+              <div class="info-section">
+                <p class="details info">
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
                 <span class="details">Chris Thomas</span>
-                <p class="details position">CEO of Red Button</p>
+                <p class="details place">CEO of Red Button</p>
               </div>
             </div>
           </div>
@@ -415,10 +450,9 @@
 
       <!--SUBSCRIBE SECTION-->
       <section class="subscribe-wrapper">
-        <img src="./public/svg/stars2.svg" alt="stars" class="stars" />
-        <img src="./public/svg/bluearrow.svg" alt="arrow" class="bluearrow" />
-
         <div class="email-section container">
+          <img src="./public/svg/stars2.svg" alt="stars" class="stars" />
+          <img src="./public/svg/bluearrow.svg" alt="arrow" class="bluearrow" />
           <img src="./public/svg/rings.svg" alt="rings" class="rings" />
           <img src="./public/svg/rings1.svg" alt="rings" class="rings1" />
           <p class="details info">
@@ -432,8 +466,10 @@
               <label for="email">Email</label>
               <input type="email" class="email" placeholder="Your email" />
             </div>
-            <a href="google.com" class="btn-sub">Subscribe</a>
+            <button type="submit" class="btn-sub">Subscribe</button>
           </div>
+
+          <p class="msg-success">"PLEASE ENTER YOUR EMAIL"</p>
         </div>
       </section>
     </main>
@@ -441,57 +477,96 @@
     <!--FOOTER SECTION-->
     <footer class="footer-wrapper">
       <div class="ellipse-section"></div>
-      <section class="footer-top container">
-        <div class="footer-name">
-          <p class="lg-header">Jadoo.</p>
-          <p class="details">
-            Book your trip in minute, get full Control for much longer.
-          </p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-nav">
-            <p class="xsm-header">Company</p>
-            <ul>
-              <li><a href="goodle.com" class="header-tag">About</a></li>
-              <li><a href="goodle.com" class="header-tag">Careers</a></li>
-              <li><a href="goodle.com" class="header-tag">Mobile</a></li>
-            </ul>
+      <div class="container">
+        <section class="footer-top">
+          <div class="footer-name">
+            <p class="lg-header">Jadoo.</p>
+            <p class="details">
+              Book your trip in minute, get full <br />Control for much longer.
+            </p>
           </div>
+          <div class="footer-links">
+            <div class="footer-nav">
+              <p class="xsm-header">Company</p>
+              <ul>
+                <li><a href="goodle.com" class="header-tag">About</a></li>
+                <li><a href="goodle.com" class="header-tag">Careers</a></li>
+                <li><a href="goodle.com" class="header-tag">Mobile</a></li>
+              </ul>
+            </div>
 
-          <div class="footer-nav">
-            <p class="xsm-header">Contact</p>
-            <ul>
-              <li><a href="goodle.com" class="header-tag">Help/FAQ</a></li>
-              <li><a href="goodle.com" class="header-tag">Press</a></li>
-              <li><a href="goodle.com" class="header-tag">Affilates</a></li>
-            </ul>
+            <div class="footer-nav">
+              <p class="xsm-header">Contact</p>
+              <ul>
+                <li><a href="goodle.com" class="header-tag">Help/FAQ</a></li>
+                <li><a href="goodle.com" class="header-tag">Press</a></li>
+                <li><a href="goodle.com" class="header-tag">Affilates</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-nav">
+              <p class="xsm-header">More</p>
+              <ul>
+                <li><a href="goodle.com" class="header-tag">Airlinefees</a></li>
+                <li><a href="goodle.com" class="header-tag">Airline</a></li>
+                <li>
+                  <a href="goodle.com" class="header-tag">Low fare tips</a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <div class="footer-socials">
+            <div class="social-media">
+              <img src="./public/svg/fb.svg" alt="fb" class="img-fb" />
+              <div class="social-insta">
+                <!-- <img src="./public/svg/insta.svg" alt="fb" class="img-insta" /> 
+                -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  class="img-insta"
+                >
+                  <g clip-path="url(#clip0_1_511)">
+                    <path
+                      d="M13.6562 0H2.34375C1.05156 0 0 1.05156 0 2.34375V13.6562C0 14.9487 1.05156 16 2.34375 16H13.6562C14.9487 16 16 14.9487 16 13.6562V2.34375C16 1.05156 14.9487 0 13.6562 0ZM15.0625 13.6562C15.0625 14.4316 14.4316 15.0625 13.6562 15.0625H2.34375C1.56844 15.0625 0.9375 14.4316 0.9375 13.6562V2.34375C0.9375 1.56844 1.56844 0.9375 2.34375 0.9375H13.6562C14.4316 0.9375 15.0625 1.56844 15.0625 2.34375V13.6562Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M13.1562 1.90625C12.6394 1.90625 12.2188 2.32687 12.2188 2.84375C12.2188 3.36063 12.6394 3.78125 13.1562 3.78125C13.6731 3.78125 14.0938 3.36063 14.0938 2.84375C14.0938 2.32687 13.6731 1.90625 13.1562 1.90625Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M8 3.78125C5.67375 3.78125 3.78125 5.67375 3.78125 8C3.78125 10.3263 5.67375 12.2188 8 12.2188C10.3263 12.2188 12.2188 10.3263 12.2188 8C12.2188 5.67375 10.3263 3.78125 8 3.78125ZM8 11.2812C6.19062 11.2812 4.71875 9.80937 4.71875 8C4.71875 6.19062 6.19062 4.71875 8 4.71875C9.80937 4.71875 11.2812 6.19062 11.2812 8C11.2812 9.80937 9.80937 11.2812 8 11.2812Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_511">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <img src="./public/svg/twitter.svg" alt="fb" class="img-fb" />
+            </div>
 
-          <div class="footer-nav">
-            <p class="xsm-header">More</p>
-            <ul>
-              <li><a href="goodle.com" class="header-tag">Airlinefees</a></li>
-              <li><a href="goodle.com" class="header-tag">Airline</a></li>
-              <li><a href="goodle.com" class="header-tag">Low fare tips</a></li>
-            </ul>
+            <p class="xsm-header">Discover our app</p>
+
+            <img
+              src="./public/svg/google.svg"
+              alt="google"
+              class="img-google"
+            />
+            <img src="./public/svg/apple.svg" alt="google" class="img-google" />
           </div>
-        </div>
-        <div class="footer-socials">
-          <div class="social-media">
-            <img src="./public/svg/fb.svg" alt="fb" class="img-fb" />
-            <img src="./public/images/insta.png" alt="fb" class="img-insta" />
-            <img src="./public/svg/twitter.svg" alt="fb" class="img-fb" />
-          </div>
-
-          <p class="xsm-header">Discover our app</p>
-
-          <img src="./public/svg/google.svg" alt="google" class="img-google" />
-          <img src="./public/svg/apple.svg" alt="google" class="img-google" />
-        </div>
-      </section>
-      <section class="footer-bottom container">
-        <p class="details">All rights reserved@jadoo.co</p>
-      </section>
+        </section>
+        <section class="footer-bottom">
+          <p class="details">All rights reserved@jadoo.co</p>
+        </section>
+      </div>
     </footer>
     <script type="module" src="/main.js"></script>
   </body>

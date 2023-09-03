@@ -1,7 +1,7 @@
 .lg-header {
   font-family: "Volkhov";
   color: #181e4b;
-  font-size: 72px;
+  font-size: 84px;
   font-weight: 700;
 }
 
@@ -27,13 +27,13 @@ a {
 }
 
 .hero-info {
-  color: #df6951;
+  color: var(--primary-color);
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.details {
+p {
   color: #5e6282;
   font-size: 16px;
   font-weight: 500;

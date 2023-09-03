@@ -1,29 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
-  <g filter="url(#filter0_d_1_505)">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 53C44.9264 53 55 42.9264 55 30.5C55 18.0736 44.9264 8 32.5 8C20.0736 8 10 18.0736 10 30.5C10 42.9264 20.0736 53 32.5 53Z" fill="url(#paint0_angular_1_505)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <g clip-path="url(#clip0_1_511)">
+    <path d="M13.6562 0H2.34375C1.05156 0 0 1.05156 0 2.34375V13.6562C0 14.9487 1.05156 16 2.34375 16H13.6562C14.9487 16 16 14.9487 16 13.6562V2.34375C16 1.05156 14.9487 0 13.6562 0ZM15.0625 13.6562C15.0625 14.4316 14.4316 15.0625 13.6562 15.0625H2.34375C1.56844 15.0625 0.9375 14.4316 0.9375 13.6562V2.34375C0.9375 1.56844 1.56844 0.9375 2.34375 0.9375H13.6562C14.4316 0.9375 15.0625 1.56844 15.0625 2.34375V13.6562Z" fill="white"/>
+    <path d="M13.1562 1.90625C12.6394 1.90625 12.2188 2.32687 12.2188 2.84375C12.2188 3.36063 12.6394 3.78125 13.1562 3.78125C13.6731 3.78125 14.0938 3.36063 14.0938 2.84375C14.0938 2.32687 13.6731 1.90625 13.1562 1.90625Z" fill="white"/>
+    <path d="M8 3.78125C5.67375 3.78125 3.78125 5.67375 3.78125 8C3.78125 10.3263 5.67375 12.2188 8 12.2188C10.3263 12.2188 12.2188 10.3263 12.2188 8C12.2188 5.67375 10.3263 3.78125 8 3.78125ZM8 11.2812C6.19062 11.2812 4.71875 9.80937 4.71875 8C4.71875 6.19062 6.19062 4.71875 8 4.71875C9.80937 4.71875 11.2812 6.19062 11.2812 8C11.2812 9.80937 9.80937 11.2812 8 11.2812Z" fill="white"/>
   </g>
   <defs>
-    <filter id="filter0_d_1_505" x="0" y="0" width="65" height="65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dy="2"/>
-      <feGaussianBlur stdDeviation="5"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_505"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_505" result="shape"/>
-    </filter>
-    <radialGradient id="paint0_angular_1_505" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32.5 30.5) rotate(90) scale(0.5)">
-      <stop stop-color="#B8D2F1"/>
-      <stop offset="0.166667" stop-color="#F289AA"/>
-      <stop offset="0.294697" stop-color="#C68BF0"/>
-      <stop offset="0.427083" stop-color="#D164DA"/>
-      <stop offset="0.614583" stop-color="#C963E8"/>
-      <stop offset="0.71875" stop-color="#BFC2E8"/>
-      <stop offset="0.802083" stop-color="#FFC999"/>
-      <stop offset="0.875" stop-color="#D0D8C9"/>
-      <stop offset="0.928149" stop-color="#BAD0F1"/>
-      <stop offset="0.997133" stop-color="#CED8CB"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
-    </radialGradient>
+    <clipPath id="clip0_1_511">
+      <rect width="16" height="16" fill="white"/>
+    </clipPath>
   </defs>
 </svg>

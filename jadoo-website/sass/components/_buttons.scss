@@ -1,7 +1,11 @@
 .btn-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #212832;
-  padding: 5px 20px;
   border-radius: 5px;
+  width: 102px;
+  height: 40px;
 }
 
 .btn-hero {
@@ -9,11 +13,23 @@
   background: #f1a501;
   box-shadow: var(--btn-box-shadow);
   color: white;
-  padding: 15px;
+  width: 170px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .btn-sub {
+  cursor: pointer;
+  outline: none;
+  border: none;
   border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Open Sans", "Helvetica Neue";
   color: white;
-  padding: 20px 50px;
+  width: 180px;
+  height: 68px;
   background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
 }

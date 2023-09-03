@@ -10,4 +10,23 @@ $background-color: rgb(254, 254, 254);
     0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 
   --btn-box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+
+  --primary-color: #df6951;
+
+  --background-insta: conic-gradient(
+    from 180deg at 50% 50%,
+    #b8d2f1 0deg,
+    #f289aa 60.00000178813934deg,
+    #c68bf0 106.09081864356995deg,
+    #d164da 153.7500035762787deg,
+    #c963e8 221.24999284744263deg,
+    #bfc2e8 258.75deg,
+    #ffc999 288.7499928474426deg,
+    #d0d8c9 315deg,
+    #bad0f1 334.13365602493286deg,
+    #ced8cb 358.9677572250366deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+
+  --insta-box-shadow: box-shadow: (0px 2px 10px rgba(0, 0, 0, 0.1));
 }

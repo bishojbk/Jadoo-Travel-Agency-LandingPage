@@ -3,6 +3,7 @@
   grid-template-areas: "first second";
   grid-template-columns: 1.6fr 1.4fr;
   gap: 180px;
+  padding: 100px 0;
 
   .booking-section-text {
     grid-area: first;

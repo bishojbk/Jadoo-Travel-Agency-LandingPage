@@ -1,5 +1,5 @@
 .footer-wrapper {
-  padding: 50px 0;
+  padding: 100px 0 50px;
   position: relative;
 
   .ellipse-section {
@@ -15,33 +15,30 @@
   }
 
   .footer-top {
+    margin-left: 50px;
     display: flex;
     align-items: center;
-    gap: 120px;
+    gap: 100px;
 
     .footer-name {
-      flex: 1;
       margin-top: -50px;
-
-      p {
-        margin: 20px 0;
-      }
 
       .lg-header {
         font-size: 44px;
         font-weight: 500;
         font-family: inherit;
+        margin: 30px 0;
       }
 
       .details {
         font-size: 13px;
+        margin: 0;
       }
     }
 
     .footer-links {
-      flex: 2;
       display: flex;
-      justify-content: space-between;
+      gap: 100px;
 
       .footer-nav {
         .xsm-header {
@@ -67,7 +64,21 @@
     }
 
     .footer-socials {
-      flex: 1;
+      .social-media {
+        display: flex;
+        align-items: center;
+      }
+
+      .social-insta {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--background-insta);
+        box-shadow: var(--insta-box-shadow);
+      }
 
       .social-media,
       .img-google {
