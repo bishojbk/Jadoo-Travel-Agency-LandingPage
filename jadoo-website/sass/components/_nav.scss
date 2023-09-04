@@ -1,4 +1,25 @@
-.nav__links {
+.navbar__nav {
   display: flex;
-  gap: 50px;
+  gap: 60px;
+  align-items: center;
+}
+
+.navbar-hamburger-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  right: 0px;
+  cursor: pointer;
+  display: none;
+
+  .ham-menu-line {
+    background-color: #ff876a;
+    width: 30px;
+    height: 1px;
+  }
+
+  @include responsive(lg) {
+    display: flex;
+  }
 }

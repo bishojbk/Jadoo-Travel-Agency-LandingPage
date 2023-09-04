@@ -64,4 +64,8 @@
       z-index: -1;
     }
   }
+
+  @include responsive(lg) {
+    padding: 0px 30px;
+  }
 }

@@ -8,29 +8,36 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+    position: relative;
 
-  .login-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    label {
+      display: none;
+    }
+    select {
+      color: #212832;
+      font-size: 17px;
+      font-weight: 500;
 
-    .lngselect {
-      label {
-        display: none;
-      }
-      select {
+      option {
         color: #212832;
         font-size: 17px;
         font-weight: 500;
-
-        option {
-          color: #212832;
-          font-size: 17px;
-          font-weight: 500;
-          cursor: pointer;
-        }
+        cursor: pointer;
       }
     }
+
+    @include responsive(lg) {
+      .nav__items {
+        display: none;
+      }
+
+      .nav__select {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  @include responsive(lg) {
+    padding: 0px 30px;
   }
 }

@@ -28,6 +28,7 @@
       display: flex;
       flex-direction: column;
       gap: 50px;
+      z-index: 1;
 
       &:hover {
         transform: scale(1.01);
@@ -35,11 +36,13 @@
         border-radius: 36px;
         background: #fff;
         box-shadow: var(--box-shadow);
-        z-index: 1;
+        // z-index: 1;
       }
     }
+
     .item2 {
       position: relative;
+
       .grid-item-images {
         img {
           margin-top: -40px;
@@ -49,6 +52,13 @@
       .grid-item-info {
         margin-top: -40px;
       }
+
+      .img-rectangle {
+        position: absolute;
+        bottom: -50px;
+        left: -70px;
+        z-index: -1;
+      }
     }
 
     .item4 {
@@ -56,16 +66,13 @@
         margin-top: 5px;
       }
     }
-
-    .img-rectangle {
-      position: absolute;
-      bottom: -50px;
-      left: -70px;
-      z-index: -1;
-    }
   }
 
   .xsm-header {
     font-family: "Open Sans", "sans-serif";
+  }
+
+  @include responsive(lg) {
+    padding: 0px 30px;
   }
 }

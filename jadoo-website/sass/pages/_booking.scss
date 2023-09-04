@@ -52,8 +52,6 @@
       border-radius: 18px;
       background: #fff;
       box-shadow: var(--box-shadow);
-      width: -moz-fit-content;
-      width: fit-content;
       padding: 20px 30px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -136,7 +134,18 @@
         display: flex;
         gap: 20px;
         justify-content: space-between;
+
+        .img-heart {
+          cursor: pointer;
+          fill: red;
+        }
       }
     }
+  }
+}
+
+.booking-wrapper {
+  @include responsive(lg) {
+    padding: 0px 30px;
   }
 }

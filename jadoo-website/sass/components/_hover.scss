@@ -1,0 +1,43 @@
+a {
+  background-image: linear-gradient(to right, #ff876a, #ff876a 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-position: 0;
+  }
+}
+
+.footer-nav {
+  ul {
+    li {
+      a {
+        background-image: linear-gradient(
+          to right,
+          #ff876a,
+          #ff876a 50%,
+          #5e6282 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-position: 0;
+        }
+      }
+    }
+  }
+}
+
+.btn-section {
+  .btn-hero {
+    -webkit-text-fill-color: white;
+  }
+}

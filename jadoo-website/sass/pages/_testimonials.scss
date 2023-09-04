@@ -53,6 +53,7 @@
 
   .testimonials-section-people {
     position: relative;
+    margin-top: 25px;
 
     .cards {
       border-radius: 10px;
@@ -60,6 +61,7 @@
       box-shadow: var(--box-shadow);
       width: 600px;
       height: 240px;
+      transition: all 0.5s ease;
 
       .img-man {
         position: absolute;
@@ -90,13 +92,18 @@
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 1;
     }
 
     .card2 {
       position: absolute;
-      bottom: -66px;
+      bottom: -96px;
       left: 45px;
       z-index: -1;
     }
+  }
+
+  @include responsive(lg) {
+    padding: 0px 30px;
   }
 }

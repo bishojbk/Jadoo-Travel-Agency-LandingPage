@@ -97,4 +97,8 @@
   .msg-success {
     visibility: hidden;
   }
+
+  @include responsive(lg) {
+    padding: 0px 30px;
+  }
 }

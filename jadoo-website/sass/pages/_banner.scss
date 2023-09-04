@@ -29,8 +29,6 @@
 
     &_text {
       padding: 100px 0 50px;
-      // width: 630px;
-      // height: 535px;
 
       p {
         margin: 20px 0;
@@ -48,8 +46,7 @@
       }
 
       .details {
-        margin: 0;
-        padding-right: 100px;
+        padding-right: 150px;
         line-height: 170%;
       }
 
@@ -86,10 +83,11 @@
 
       img {
         width: 100%;
-
-        // width: 765px;
-        // height: 764px;
       }
     }
+  }
+
+  @include responsive(lg) {
+    padding: 0px 30px;
   }
 }
