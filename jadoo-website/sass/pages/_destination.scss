@@ -7,6 +7,14 @@
     p {
       margin: 20px 0;
     }
+
+    @include responsive(lg) {
+      text-align: center;
+
+      p {
+        font-size: 24px;
+      }
+    }
   }
 
   .grid-item {
@@ -23,6 +31,10 @@
     width: 90%;
     object-fit: cover;
     border-radius: 24px;
+
+    @include responsive(lg) {
+      width: 100%;
+    }
   }
 
   .place-details {
@@ -32,6 +44,10 @@
     bottom: 0;
     width: 90%;
     box-shadow: var(--box-shadow);
+
+    @include responsive(lg) {
+      width: 100%;
+    }
   }
 
   .img-details {
@@ -66,6 +82,6 @@
   }
 
   @include responsive(lg) {
-    padding: 0px 30px;
+    padding: 20px 30px;
   }
 }

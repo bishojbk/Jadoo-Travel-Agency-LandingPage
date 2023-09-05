@@ -1,1 +1,21 @@
+.fail {
+  color: red;
+}
 
+.success {
+  color: green;
+}
+
+.background-black {
+  position: absolute;
+  background: black;
+  opacity: 0.8;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

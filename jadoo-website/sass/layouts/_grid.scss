@@ -4,6 +4,11 @@
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   gap: 80px;
+
+  @include responsive(lg) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
 }
 
 .destination-grid {
@@ -12,4 +17,9 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   position: relative;
+
+  @include responsive(lg) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
 }

@@ -17,18 +17,23 @@
     p {
       margin: 20px 0;
     }
+
+    @include responsive(lg) {
+      text-align: center;
+      p {
+        font-size: 24px;
+      }
+    }
   }
 
   .services-grid {
     .grid-item {
       cursor: pointer;
-      position: relative;
       padding: 0 30px;
       transition: transform 0.2s ease-in-out;
       display: flex;
       flex-direction: column;
       gap: 50px;
-      z-index: 1;
 
       &:hover {
         transform: scale(1.01);
@@ -36,7 +41,6 @@
         border-radius: 36px;
         background: #fff;
         box-shadow: var(--box-shadow);
-        // z-index: 1;
       }
     }
 
@@ -58,6 +62,10 @@
         bottom: -50px;
         left: -70px;
         z-index: -1;
+
+        @include responsive(lg) {
+          display: none;
+        }
       }
     }
 
@@ -66,6 +74,10 @@
         margin-top: 5px;
       }
     }
+
+    @include responsive(lg) {
+      margin: 50px 0 0;
+    }
   }
 
   .xsm-header {
@@ -73,6 +85,6 @@
   }
 
   @include responsive(lg) {
-    padding: 0px 30px;
+    padding: 20px 30px;
   }
 }

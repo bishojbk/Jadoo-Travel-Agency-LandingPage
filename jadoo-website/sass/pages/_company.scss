@@ -25,9 +25,16 @@
       z-index: 1;
       transform: scale(1.02);
     }
+
+    @include responsive(lg) {
+      width: 120px;
+      height: 100px;
+    }
   }
 
   @include responsive(lg) {
-    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
   }
 }

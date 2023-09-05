@@ -14,7 +14,7 @@
   display: none;
 
   .ham-menu-line {
-    background-color: #ff876a;
+    background-color: red;
     width: 30px;
     height: 1px;
   }
@@ -22,4 +22,48 @@
   @include responsive(lg) {
     display: flex;
   }
+}
+
+.ham-menu-items {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  background: #fff;
+  padding: 30px 0;
+  box-shadow: var(--box-shadow);
+  width: 90vw;
+  text-align: center;
+  margin: 0 50px;
+  border-radius: 25px;
+  display: none;
+
+  .img-cross {
+    width: 130px;
+    height: 130px;
+  }
+
+  li {
+    border-bottom: 1px solid black;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .ham-menu-btns {
+    padding-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-register {
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 1px 20px;
+    }
+  }
+}
+
+.show {
+  display: block;
 }

@@ -1,24 +1,15 @@
 .testimonials-wrapper {
   padding: 100px 0;
 
-  .pagination {
-    position: absolute;
-    right: -150px;
-    top: 90px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-
-    .opacity {
-      opacity: 0.5;
-    }
-  }
-
   .testimonials-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
+
+    @include responsive(lg) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .testimonials-section-text {
@@ -33,40 +24,49 @@
       }
     }
 
-    .dots-section {
-      display: flex;
-      gap: 30px;
+    @include responsive(lg) {
+      text-align: center;
 
-      .dots {
-        cursor: pointer;
-        background: rgb(190, 187, 187);
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-      }
-
-      .active {
-        background: black;
+      p {
+        font-size: 24px;
       }
     }
   }
 
   .testimonials-section-people {
-    position: relative;
-    margin-top: 25px;
+    width: 580px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 10px 15px 10px 10px;
 
     .cards {
-      border-radius: 10px;
-      background: #fff;
-      box-shadow: var(--box-shadow);
-      width: 600px;
-      height: 240px;
-      transition: all 0.5s ease;
+      position: relative;
 
-      .img-man {
+      .card-image {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        overflow: hidden;
+        top: 0px;
+        left: 0px;
         position: absolute;
-        left: -30px;
-        top: -25px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        @include responsive(lg) {
+          position: relative;
+          z-index: -1;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
       }
 
       .info-section {
@@ -75,6 +75,11 @@
         .info {
           margin: 20px 0 50px;
           padding: 0 80px 0 0;
+
+          @include responsive(lg) {
+            padding: 0 30px 0 0;
+            margin: 20px 0;
+          }
         }
 
         span.details {
@@ -85,25 +90,19 @@
         .place {
           margin: 5px 0 0;
         }
+
+        @include responsive(lg) {
+          padding: 0;
+        }
       }
     }
 
-    .card1 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-
-    .card2 {
-      position: absolute;
-      bottom: -96px;
-      left: 45px;
-      z-index: -1;
+    @include responsive(lg) {
+      width: 100%;
     }
   }
 
   @include responsive(lg) {
-    padding: 0px 30px;
+    padding: 20px 30px;
   }
 }

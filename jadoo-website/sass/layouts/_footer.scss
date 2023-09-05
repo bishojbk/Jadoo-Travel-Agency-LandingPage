@@ -12,13 +12,28 @@
     border-radius: 500px;
     right: 0px;
     bottom: -30px;
+
+    @include responsive(lg) {
+      bottom: 0;
+      right: 0;
+      opacity: 0.5;
+      width: 500px;
+      height: 300px;
+      z-index: -1;
+    }
+  }
+
+  .container {
+    @include responsive(lg) {
+      padding: 0;
+    }
   }
 
   .footer-top {
     margin-left: 50px;
     display: flex;
     align-items: center;
-    gap: 100px;
+    justify-content: space-between;
 
     .footer-name {
       margin-top: -50px;
@@ -28,11 +43,20 @@
         font-weight: 500;
         font-family: inherit;
         margin: 30px 0;
+
+        @include responsive(lg) {
+          margin: 0;
+        }
       }
 
       .details {
         font-size: 13px;
         margin: 0;
+      }
+
+      @include responsive(lg) {
+        margin: 0;
+        text-align: center;
       }
     }
 
@@ -46,6 +70,10 @@
           font-size: 21px;
           font-weight: 700;
           line-height: 124.5%;
+
+          @include responsive(lg) {
+            margin: 20px 0 15px;
+          }
         }
 
         ul {
@@ -58,8 +86,25 @@
               font-weight: 500;
               line-height: 124.5%;
             }
+            @include responsive(lg) {
+              margin: 5px;
+              padding: 0;
+            }
+          }
+
+          @include responsive(lg) {
+            margin: 0;
+            padding: 0;
           }
         }
+      }
+
+      @include responsive(lg) {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0px;
+        row-gap: 10px;
+        text-align: center;
       }
     }
 
@@ -67,6 +112,28 @@
       .social-media {
         display: flex;
         align-items: center;
+        gap: 20px;
+
+        .social-fb {
+          background: #fffefe;
+          box-shadow: var(--social-box-shadow);
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.4s ease-in-out;
+
+          &:hover {
+            background: #ff876a;
+          }
+        }
+
+        @include responsive(lg) {
+          padding: 20px 0 0px;
+          justify-content: center;
+        }
       }
 
       .social-insta {
@@ -80,6 +147,22 @@
         box-shadow: var(--insta-box-shadow);
       }
 
+      .social-twitter {
+        background: #fffefe;
+        box-shadow: var(--social-box-shadow);
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+          background: #ff876a;
+        }
+      }
+
       .social-media,
       .img-google {
         cursor: pointer;
@@ -90,15 +173,33 @@
         font-weight: 500;
         line-height: 124.5%;
       }
+
+      @include responsive(lg) {
+        display: block;
+        gap: 50px;
+        margin: 0;
+      }
+    }
+
+    @include responsive(lg) {
+      display: block;
+      gap: 50px;
+      margin: 0;
+      text-align: center;
     }
   }
 
   .footer-bottom {
     padding: 50px 0 0;
     text-align: center;
+
+    @include responsive(lg) {
+      text-align: center;
+      padding: 20px 0 0;
+    }
   }
 
   @include responsive(lg) {
-    padding: 0px 30px;
+    padding: 20px 30px 0;
   }
 }

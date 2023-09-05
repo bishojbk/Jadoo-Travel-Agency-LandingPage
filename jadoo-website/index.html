@@ -25,8 +25,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./sass/utils/slick.scss" />
   </head>
   <body>
+    <div class="background-black"></div>
+
     <!--HEADER SECTION-->
     <header class="header">
       <div class="header-wrapper container">
@@ -68,6 +71,28 @@
             </li>
           </ul>
         </nav>
+      </div>
+
+      <div class="ham-menu-items">
+        <img src="./public/svg/cross.svg" alt="cross" class="img-cross" />
+        <ul>
+          <li class="ham__items">
+            <a href="#">Destinations</a>
+          </li>
+          <li class="ham__items">
+            <a href="#">Hotels</a>
+          </li>
+          <li class="ham__items">
+            <a href="#">Flights</a>
+          </li>
+          <li class="ham__items">
+            <a href="#">Bookings</a>
+          </li>
+        </ul>
+
+        <div class="ham-menu-btns">
+          <a href="#" class="btn-register">Login / Sign Up</a>
+        </div>
       </div>
     </header>
 
@@ -317,11 +342,16 @@
             <div class="ellipse-section"></div>
 
             <div class="ongoingtrip-section">
-              <img src="./public/svg/temple.svg" alt="square" class="temple" />
-
+              <div class="img-temple-section">
+                <img
+                  src="./public/svg/temple.svg"
+                  alt="square"
+                  class="temple"
+                />
+              </div>
               <div class="img-info">
                 <span class="details">Ongoing </span>
-                <p class="details">Trip to rome.</p>
+                <h4 class="details">Trip to rome.</h4>
 
                 <p class="text-color">
                   <span class="blue">40%</span>
@@ -337,13 +367,15 @@
             </div>
 
             <div class="card">
-              <img
-                src="./public/images/girlstanding.jpg"
-                alt="girlstanding"
-                class="img-girlstanding"
-              />
+              <div class="img-girlstanding-section">
+                <img
+                  src="./public/images/girlstanding.jpg"
+                  alt="girlstanding"
+                  class="img-girlstanding"
+                />
+              </div>
 
-              <p class="header-tag">Trip To Greece</p>
+              <h3 class="header-tag">Trip To Greece</h3>
               <p class="details">14-29 June | by Robbin joseph</p>
               <div class="svg-section">
                 <img src="./public/svg/leaf.svg" alt="leaf" />
@@ -372,32 +404,18 @@
       <!--TESTIMONIALS SECTION-->
       <section class="testimonials-wrapper">
         <div class="container testimonials-section">
-          <div class="pagination">
-            <img
-              src="./public/images/upload.png"
-              alt="arrows"
-              class="img-up opacity"
-            />
-            <img src="./public/images/down.png" alt="arrows" class="img-down" />
-          </div>
           <div class="testimonials-section-text">
             <div class="testimonials-header">
               <span class="header-tag">TESTIMONIALS </span>
               <p class="sm-header">What people say about Us.</p>
             </div>
-
-            <div class="dots-section">
-              <div class="dots dot1 active"></div>
-
-              <div class="dots dot2"></div>
-
-              <div class="dots dot3"></div>
-            </div>
           </div>
 
           <div class="testimonials-section-people">
             <div class="cards card1">
-              <img src="./public/images/Man.png" alt="man" class="img-man" />
+              <div class="card-image">
+                <img src="./public/images/Man.png" alt="man" class="img-man" />
+              </div>
               <div class="info-section">
                 <p class="details info">
                   “On the Windows talking painted pasture yet its express
@@ -410,13 +428,39 @@
             </div>
 
             <div class="cards card2">
-              <img src="./public/images/Man.png" alt="man" class="img-man" />
+              <div class="card-image">
+                <img
+                  src="./public/images/eminem.jpg"
+                  alt="man"
+                  class="img-man"
+                />
+              </div>
               <div class="info-section">
                 <p class="details info">
-                  "HELLO THERE, HOW ARE WE? Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Animi eum eveniet aspernatur. "
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
                 </p>
-                <span class="details">Chris Thomas</span>
+                <span class="details">EMINEM</span>
+                <p class="details place">THE GOAT</p>
+              </div>
+            </div>
+
+            <div class="cards card3">
+              <div class="card-image">
+                <img
+                  src="./public/images/kendrick.jpg"
+                  alt="man"
+                  class="img-man"
+                />
+              </div>
+              <div class="info-section">
+                <p class="details info">
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
+                <span class="details">Kendrick Lamar</span>
                 <p class="details place">CEO of Red Button</p>
               </div>
             </div>
@@ -453,14 +497,18 @@
 
           <div class="images-wrapper">
             <img
-              src="./public/svg/qantas.svg"
+              src="./public/svg/amazon.svg"
               alt="company-logo"
               class="axiom"
             />
           </div>
 
           <div class="images-wrapper">
-            <img src="./public/svg/att.svg" alt="company-logo" class="axiom" />
+            <img
+              src="./public/svg/netflix.svg"
+              alt="company-logo"
+              class="axiom"
+            />
           </div>
         </div>
       </section>
@@ -499,7 +547,7 @@
           <div class="footer-name">
             <p class="lg-header">Jadoo.</p>
             <p class="details">
-              Book your trip in minute, get full <br />Control for much longer.
+              Book your trip in minute, get full Control for much longer.
             </p>
           </div>
           <div class="footer-links">
@@ -534,10 +582,10 @@
           </div>
           <div class="footer-socials">
             <div class="social-media">
-              <img src="./public/svg/fb.svg" alt="fb" class="img-fb" />
+              <div class="social-fb">
+                <img src="./public/svg/fb.svg" alt="fb" class="img-fb" />
+              </div>
               <div class="social-insta">
-                <!-- <img src="./public/svg/insta.svg" alt="fb" class="img-insta" /> 
-                -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -567,7 +615,14 @@
                   </defs>
                 </svg>
               </div>
-              <img src="./public/svg/twitter.svg" alt="fb" class="img-fb" />
+
+              <div class="social-twitter">
+                <img
+                  src="./public/svg/twitter.svg"
+                  alt="fb"
+                  class="img-twitter"
+                />
+              </div>
             </div>
 
             <p class="xsm-header">Discover our app</p>
@@ -585,6 +640,9 @@
         </section>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./slick.min.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

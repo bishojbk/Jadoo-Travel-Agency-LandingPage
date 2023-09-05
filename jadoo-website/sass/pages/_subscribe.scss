@@ -5,6 +5,13 @@
     position: absolute;
     bottom: -72px;
     right: -100px;
+
+    @include responsive(lg) {
+      width: 30%;
+      right: -20px;
+      bottom: -40px;
+      z-index: -1;
+    }
   }
 
   .bluearrow {
@@ -12,13 +19,18 @@
     top: -30px;
     right: -20px;
     z-index: 5;
+
+    @include responsive(lg) {
+      width: 15%;
+      top: -23px;
+    }
   }
 
   .email-section {
     text-align: center;
     border-radius: 129px 20px 20px 20px;
     background: rgba(223, 215, 249, 0.2);
-    padding: 50px 0 70px;
+    padding: 50px 0 15px;
     position: relative;
 
     .rings {
@@ -27,6 +39,10 @@
       bottom: 0;
       z-index: -1;
       opacity: 0.1;
+
+      @include responsive(lg) {
+        display: none;
+      }
     }
 
     .rings1 {
@@ -35,6 +51,10 @@
       opacity: 0.1;
       top: 0;
       z-index: -1;
+
+      @include responsive(lg) {
+        display: none;
+      }
     }
 
     .info {
@@ -42,6 +62,12 @@
       font-weight: 600;
       padding: 0 150px;
       opacity: 1;
+
+      @include responsive(lg) {
+        text-align: center;
+        font-size: 14px;
+        padding: 0 30px;
+      }
     }
 
     .subscribe-section {
@@ -58,16 +84,20 @@
           z-index: 55;
           top: 22px;
           left: 22px;
+
+          @include responsive(lg) {
+            top: 18px;
+          }
         }
 
         input {
           border-radius: 10px;
           background: white;
           gap: 10px;
-          padding: 20px 250px 20px 30px;
+          padding: 20px;
           outline: none;
           border: none;
-          width: 100%;
+          width: 400px;
           box-sizing: border-box;
           position: relative;
 
@@ -79,6 +109,12 @@
             margin-left: 0px;
             position: absolute;
             left: 52px;
+            width: 100%;
+          }
+
+          @include responsive(lg) {
+            width: 140%;
+            padding: 15px;
           }
         }
         label {
@@ -91,14 +127,32 @@
           font-weight: 400;
         }
       }
+
+      @include responsive(lg) {
+        padding: 0 20px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    @include responsive(lg) {
+      border-radius: 80px 20px 20px 20px;
+      padding: 20px 0 0px;
     }
   }
 
   .msg-success {
+    margin-left: 250px;
     visibility: hidden;
+
+    @include responsive(lg) {
+      margin-left: 20px;
+    }
   }
 
   @include responsive(lg) {
-    padding: 0px 30px;
+    padding: 20px 30px;
   }
 }
