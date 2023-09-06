@@ -15,11 +15,28 @@
     border-radius: 500px;
     left: -400px;
     top: -50px;
+
+    @include responsive(lg) {
+      left: 0;
+      top: 0;
+      z-index: -1;
+      opacity: 0.6;
+      width: 200px;
+      height: 200px;
+    }
   }
 
   .img-diamond {
     position: absolute;
     right: -210px;
+
+    @include responsive(lg) {
+      display: none;
+      left: -50px;
+      width: 100%;
+      top: -50px;
+      z-index: -1;
+    }
   }
 
   .hero-wrapper {
@@ -30,8 +47,35 @@
     &_text {
       padding: 100px 0 50px;
 
+      @include responsive(lg) {
+        text-align: center;
+        padding: 50px 0 0;
+      }
+
+      .hero-info {
+        @include responsive(lg) {
+          font-size: 14px;
+        }
+      }
+
+      h1 {
+        span {
+          @include responsive(lg) {
+            font-size: 44px;
+          }
+        }
+        @include responsive(lg) {
+          font-size: 40px;
+        }
+      }
+
       p {
         margin: 20px 0;
+
+        @include responsive(lg) {
+          font-size: 16px;
+          margin: 0;
+        }
       }
 
       span {
@@ -42,12 +86,24 @@
           position: absolute;
           top: 10px;
           left: -30px;
+
+          @include responsive(lg) {
+            content: url("../../public/svg/linesmall.svg");
+            position: absolute;
+            top: 8px;
+            left: 0px;
+          }
         }
       }
 
       .details {
         padding-right: 150px;
         line-height: 170%;
+        @include responsive(lg) {
+          font-size: 16px;
+          margin: 0;
+          padding-right: 0;
+        }
       }
 
       .btn-section {
@@ -56,22 +112,38 @@
         gap: 20px;
         margin-top: 30px;
 
-        .img-play {
-          background: var(--primary-color);
-          border-radius: 50%;
-          box-shadow: var(--btn-box-shadow);
-          margin-left: 35px;
-          cursor: pointer;
-          height: 52px;
-          width: 52px;
+        .play-section {
           display: flex;
           align-items: center;
-          justify-content: center;
+          gap: 20px;
 
-          img {
-            filter: invert(1);
-            width: 13px;
-            height: 13px;
+          .img-play {
+            background: var(--primary-color);
+            border-radius: 50%;
+            box-shadow: var(--btn-box-shadow);
+            margin-left: 35px;
+            cursor: pointer;
+            height: 52px;
+            width: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+              filter: invert(1);
+              width: 13px;
+              height: 13px;
+            }
+
+            @include responsive(lg) {
+              margin: 0;
+            }
+          }
+
+          @include responsive(lg) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0;
           }
         }
       }
@@ -84,10 +156,19 @@
       img {
         width: 100%;
       }
+
+      @include responsive(lg) {
+        margin-top: 50px;
+      }
+    }
+
+    @include responsive(lg) {
+      display: flex;
+      flex-direction: column;
     }
   }
 
   @include responsive(lg) {
-    padding: 0px 30px;
+    padding: 20px 30px;
   }
 }

@@ -9,6 +9,12 @@
   .img-stars {
     position: absolute;
     right: -180px;
+
+    @include responsive(lg) {
+      right: 0;
+      z-index: -1;
+      width: 30%;
+    }
   }
 
   .services-header {
@@ -59,9 +65,22 @@
 
       .img-rectangle {
         position: absolute;
+        z-index: -9;
         bottom: -50px;
         left: -70px;
-        z-index: -1;
+        display: none;
+
+        @include responsive(lg) {
+          display: none;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        z-index: -9;
+        bottom: -50px;
+        left: -70px;
+        content: url(../../public/svg/rectangle.svg);
 
         @include responsive(lg) {
           display: none;

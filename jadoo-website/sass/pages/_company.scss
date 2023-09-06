@@ -6,11 +6,11 @@
 
   .images-wrapper {
     cursor: pointer;
-    width: 180px;
-    height: 162px;
-    padding: 0 20px;
+    width: 162px;
+    height: 100px;
     transition: transform 0.5s ease-in-out;
     background-color: #fff;
+    position: relative;
 
     img {
       width: 100%;
@@ -19,11 +19,17 @@
     }
 
     &:hover {
+      transform: scale(1.02);
+    }
+
+    &:hover::before {
+      content: "";
       border-radius: 10px;
       background-color: transparent;
       box-shadow: var(--box-shadow);
-      z-index: 1;
-      transform: scale(1.02);
+      width: 160px;
+      height: 90px;
+      position: absolute;
     }
 
     @include responsive(lg) {

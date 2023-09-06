@@ -10,9 +10,11 @@ const hamMenuItems = document.querySelector(".ham-menu-items");
 const hamMenu = document.querySelector(".navbar-hamburger-menu");
 const bgBlack = document.querySelector(".background-black");
 const crossImg = document.querySelector(".img-cross");
+const hamMenuNav = document.querySelector(".mob-nav-show");
 
 hamMenu.addEventListener("click", () => {
   hamMenuItems.classList.toggle("show");
+  // hamMenuItems.style.display = "block";
   bgBlack.classList.toggle("show");
   document.body.classList.toggle("no-scroll");
 });
@@ -50,8 +52,8 @@ input.addEventListener("click", () => {
   emailImage.style.display = "none";
 });
 
-$(document).ready(function () {
-  $(".testimonials-section-people").slick({
-    dots: true,
-  });
-});
+// $(document).ready(function () {
+//   $(".testimonials-section-people").slick({
+//     dots: true,
+//   });
+// });

@@ -36,11 +36,7 @@
         <div class="header-logo">
           <img src="./public/svg/logo.svg" alt="company-logo" />
         </div>
-        <div class="navbar-hamburger-menu">
-          <div class="ham-menu-line"></div>
-          <div class="ham-menu-line"></div>
-          <div class="ham-menu-line"></div>
-        </div>
+
         <nav class="navbar-wrapper">
           <ul class="navbar__nav">
             <li class="nav__items">
@@ -61,9 +57,9 @@
               <a href="#" class="btn-register">Sign Up</a>
             </li>
 
-            <li class="nav__select">
+            <li class="nav_select">
               <label for="languageSelect">EN</label>
-              <select id="languageSelect" title="lang">
+              <select id="nav_lang" title="lang">
                 <option value="en">EN</option>
                 <option value="nep">NP</option>
                 <option value="hin">SP</option>
@@ -71,27 +67,45 @@
             </li>
           </ul>
         </nav>
-      </div>
 
-      <div class="ham-menu-items">
-        <img src="./public/svg/cross.svg" alt="cross" class="img-cross" />
-        <ul>
-          <li class="ham__items">
-            <a href="#">Destinations</a>
-          </li>
-          <li class="ham__items">
-            <a href="#">Hotels</a>
-          </li>
-          <li class="ham__items">
-            <a href="#">Flights</a>
-          </li>
-          <li class="ham__items">
-            <a href="#">Bookings</a>
-          </li>
-        </ul>
+        <div class="navbar-hamburger-menu">
+          <div class="mob-nav-show">
+            <div class="ham-menu-line"></div>
+            <div class="ham-menu-line"></div>
+            <div class="ham-menu-line"></div>
 
-        <div class="ham-menu-btns">
-          <a href="#" class="btn-register">Login / Sign Up</a>
+            <img src="./public/svg/cross.svg" alt="cross" class="img-cross" />
+          </div>
+
+          <div class="ham-menu-items">
+            <ul>
+              <li class="ham__items">
+                <a href="#">Destinations</a>
+              </li>
+              <li class="ham__items">
+                <a href="#">Hotels</a>
+              </li>
+              <li class="ham__items">
+                <a href="#">Flights</a>
+              </li>
+              <li class="ham__items">
+                <a href="#">Bookings</a>
+              </li>
+            </ul>
+
+            <div class="ham-menu-btns">
+              <a href="#" class="btn-register">Login / Sign Up</a>
+            </div>
+
+            <div class="ham__selected">
+              <label for="languageSelect">EN</label>
+              <select id="languageSelect" title="lang">
+                <option value="en">EN</option>
+                <option value="nep">NP</option>
+                <option value="hin">SP</option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -113,10 +127,10 @@
           <div class="hero-wrapper">
             <div class="hero-wrapper_text">
               <p class="hero-info">Best Destinations around the world</p>
-              <p class="lg-header">
+              <h1 class="lg-header">
                 Travel, <span class="lg-header">enjoy </span>and live a new and
                 full life
-              </p>
+              </h1>
               <p class="details">
                 Built Wicket longer admire do barton vanity itself do in it.
                 Preferred to sportsmen it engrossed listening. Park gate sell
@@ -125,11 +139,13 @@
               <div class="btn-section">
                 <a href="#" class="btn-hero">Find out more</a>
 
-                <div class="img-play">
-                  <img src="./public/images/play.png" alt="play-btn" />
-                </div>
+                <div class="play-section">
+                  <div class="img-play">
+                    <img src="./public/images/play.png" alt="play-btn" />
+                  </div>
 
-                <a href="#" class="btn-play details">Play Demo</a>
+                  <a href="#" class="btn-play details">Play Demo</a>
+                </div>
               </div>
             </div>
 
@@ -616,7 +632,7 @@
                 </svg>
               </div>
 
-              <div class="social-twitter">
+              <div class="social-fb">
                 <img
                   src="./public/svg/twitter.svg"
                   alt="fb"
