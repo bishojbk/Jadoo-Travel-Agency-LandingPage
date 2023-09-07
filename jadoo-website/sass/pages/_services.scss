@@ -13,7 +13,7 @@
     @include responsive(lg) {
       right: 0;
       z-index: -1;
-      width: 30%;
+      width: 80px;
     }
   }
 
@@ -65,22 +65,10 @@
 
       .img-rectangle {
         position: absolute;
-        z-index: -9;
+        z-index: -1;
         bottom: -50px;
         left: -70px;
-        display: none;
-
-        @include responsive(lg) {
-          display: none;
-        }
-      }
-
-      &::after {
-        position: absolute;
-        z-index: -9;
-        bottom: -50px;
-        left: -70px;
-        content: url(../../public/svg/rectangle.svg);
+        // display: none;
 
         @include responsive(lg) {
           display: none;

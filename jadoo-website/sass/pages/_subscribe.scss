@@ -7,7 +7,7 @@
     right: -100px;
 
     @include responsive(lg) {
-      width: 30%;
+      width: 80px;
       right: -20px;
       bottom: -40px;
       z-index: -1;
@@ -21,8 +21,12 @@
     z-index: 5;
 
     @include responsive(lg) {
-      width: 15%;
+      width: 80px;
       top: -23px;
+    }
+
+    @include responsive(xsm) {
+      width: 50px;
     }
   }
 
@@ -30,7 +34,7 @@
     text-align: center;
     border-radius: 129px 20px 20px 20px;
     background: rgba(223, 215, 249, 0.2);
-    padding: 50px 0 15px;
+    padding: 50px 0 35px;
     position: relative;
 
     .rings {
@@ -113,8 +117,13 @@
           }
 
           @include responsive(lg) {
-            width: 140%;
+            width: 400px;
             padding: 15px;
+          }
+
+          @include responsive(xsm) {
+            padding: 15px;
+            width: 200px;
           }
         }
         label {
@@ -131,8 +140,9 @@
       @include responsive(lg) {
         padding: 0 20px;
         display: flex;
-        align-items: start;
+        align-items: center;
         flex-direction: column;
+        justify-content: center;
         gap: 10px;
       }
     }
@@ -143,12 +153,27 @@
     }
   }
 
-  .msg-success {
-    margin-left: 250px;
-    visibility: hidden;
+  .email-success {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    @include responsive(lg) {
-      margin-left: 20px;
+    .img-tick-blue {
+      display: none;
+    }
+
+    .img-tick-red {
+      display: none;
+    }
+
+    .msg-success {
+      visibility: hidden;
+
+      @include responsive(lg) {
+        font-size: 12px;
+        text-align: left;
+      }
     }
   }
 

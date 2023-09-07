@@ -1,16 +1,18 @@
 .company-section {
   display: flex;
-  padding: 100px 0;
+  padding: 200px 0 100px;
   align-items: center;
   justify-content: space-between;
 
   .images-wrapper {
     cursor: pointer;
-    width: 162px;
+    width: 140px;
     height: 100px;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     background-color: #fff;
     position: relative;
+    padding: 0px 30px;
+    overflow: hidden; /* Hide overflow content */
 
     img {
       width: 100%;
@@ -20,21 +22,9 @@
 
     &:hover {
       transform: scale(1.02);
-    }
-
-    &:hover::before {
-      content: "";
       border-radius: 10px;
-      background-color: transparent;
       box-shadow: var(--box-shadow);
-      width: 160px;
-      height: 90px;
-      position: absolute;
-    }
-
-    @include responsive(lg) {
-      width: 120px;
-      height: 100px;
+      background-color: transparent;
     }
   }
 

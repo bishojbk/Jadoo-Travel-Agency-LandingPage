@@ -33,7 +33,7 @@
     border-radius: 24px;
 
     @include responsive(lg) {
-      width: 100%;
+      width: 90%;
     }
   }
 
@@ -46,7 +46,7 @@
     box-shadow: var(--box-shadow);
 
     @include responsive(lg) {
-      width: 100%;
+      width: 90%;
     }
   }
 

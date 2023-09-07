@@ -135,8 +135,13 @@
       }
 
       @include responsive(lg) {
+        bottom: 100px;
+        left: 150px;
+      }
+
+      @include responsive(sm) {
         bottom: 0px;
-        right: -10px;
+        left: 0px;
       }
     }
 

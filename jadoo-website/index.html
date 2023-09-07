@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Jadoo | Travel Agency</title>
     <link rel="stylesheet" href="./sass/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,10 +25,40 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./sass/utils/slick.scss" />
   </head>
   <body>
     <div class="background-black"></div>
+
+    <div class="ham-menu-items">
+      <img src="./public/svg/cross.svg" alt="cross" class="img-cross" />
+      <ul>
+        <li class="ham__items">
+          <a href="#">Destinations</a>
+        </li>
+        <li class="ham__items">
+          <a href="#">Hotels</a>
+        </li>
+        <li class="ham__items">
+          <a href="#">Flights</a>
+        </li>
+        <li class="ham__items">
+          <a href="#">Bookings</a>
+        </li>
+      </ul>
+
+      <div class="ham-menu-btns">
+        <a href="#" class="btn-register">Login / Sign Up</a>
+      </div>
+
+      <div class="ham__select">
+        <label for="languageSelect">EN</label>
+        <select id="languageSelect" title="lang">
+          <option value="en">EN</option>
+          <option value="nep">NP</option>
+          <option value="hin">SP</option>
+        </select>
+      </div>
+    </div>
 
     <!--HEADER SECTION-->
     <header class="header">
@@ -73,38 +103,6 @@
             <div class="ham-menu-line"></div>
             <div class="ham-menu-line"></div>
             <div class="ham-menu-line"></div>
-
-            <img src="./public/svg/cross.svg" alt="cross" class="img-cross" />
-          </div>
-
-          <div class="ham-menu-items">
-            <ul>
-              <li class="ham__items">
-                <a href="#">Destinations</a>
-              </li>
-              <li class="ham__items">
-                <a href="#">Hotels</a>
-              </li>
-              <li class="ham__items">
-                <a href="#">Flights</a>
-              </li>
-              <li class="ham__items">
-                <a href="#">Bookings</a>
-              </li>
-            </ul>
-
-            <div class="ham-menu-btns">
-              <a href="#" class="btn-register">Login / Sign Up</a>
-            </div>
-
-            <div class="ham__selected">
-              <label for="languageSelect">EN</label>
-              <select id="languageSelect" title="lang">
-                <option value="en">EN</option>
-                <option value="nep">NP</option>
-                <option value="hin">SP</option>
-              </select>
-            </div>
           </div>
         </div>
       </div>
@@ -428,59 +426,84 @@
           </div>
 
           <div class="testimonials-section-people">
-            <div class="cards card1">
-              <div class="card-image">
-                <img src="./public/images/Man.png" alt="man" class="img-man" />
+            <div class="cards" id="myCarousel">
+              <div class="card card1">
+                <div class="card-image">
+                  <img
+                    src="./public/images/Man.png"
+                    alt="man"
+                    class="img-man"
+                  />
+                </div>
+                <div class="info-section">
+                  <p class="details info">
+                    “On the Windows talking painted pasture yet its express
+                    parties use. Sure last upon he same as knew next. Of
+                    believed or diverted no.”
+                  </p>
+                  <span class="details name">Mike taylor</span>
+                  <p class="details place">Lahore, Pakistan</p>
+                </div>
               </div>
-              <div class="info-section">
-                <p class="details info">
-                  “On the Windows talking painted pasture yet its express
-                  parties use. Sure last upon he same as knew next. Of believed
-                  or diverted no.”
-                </p>
-                <span class="details name">Mike taylor</span>
-                <p class="details place">Lahore, Pakistan</p>
-              </div>
-            </div>
 
-            <div class="cards card2">
-              <div class="card-image">
-                <img
-                  src="./public/images/eminem.jpg"
-                  alt="man"
-                  class="img-man"
-                />
+              <div class="card card2">
+                <div class="card-image">
+                  <img
+                    src="./public/images/eminem.jpg"
+                    alt="man"
+                    class="img-man"
+                  />
+                </div>
+                <div class="info-section">
+                  <p class="details info">
+                    “On the Windows talking painted pasture yet its express
+                    parties use. Sure last upon he same as knew next. Of
+                    believed or diverted no.”
+                  </p>
+                  <span class="details">EMINEM</span>
+                  <p class="details place">THE GOAT</p>
+                </div>
               </div>
-              <div class="info-section">
-                <p class="details info">
-                  “On the Windows talking painted pasture yet its express
-                  parties use. Sure last upon he same as knew next. Of believed
-                  or diverted no.”
-                </p>
-                <span class="details">EMINEM</span>
-                <p class="details place">THE GOAT</p>
-              </div>
-            </div>
 
-            <div class="cards card3">
-              <div class="card-image">
-                <img
-                  src="./public/images/kendrick.jpg"
-                  alt="man"
-                  class="img-man"
-                />
-              </div>
-              <div class="info-section">
-                <p class="details info">
-                  “On the Windows talking painted pasture yet its express
-                  parties use. Sure last upon he same as knew next. Of believed
-                  or diverted no.”
-                </p>
-                <span class="details">Kendrick Lamar</span>
-                <p class="details place">CEO of Red Button</p>
+              <div class="card card3">
+                <div class="card-image">
+                  <img
+                    src="./public/images/kendrick.jpg"
+                    alt="man"
+                    class="img-man"
+                  />
+                </div>
+                <div class="info-section">
+                  <p class="details info">
+                    “On the Windows talking painted pasture yet its express
+                    parties use. Sure last upon he same as knew next. Of
+                    believed or diverted no.”
+                  </p>
+                  <span class="details">Kendrick Lamar</span>
+                  <p class="details place">CEO of Red Button</p>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="dots-section">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <img
+            src="./public/images/upload.png"
+            alt="pagination"
+            class="img-up opacity"
+          />
+          <img
+            src="./public/images/down.png"
+            alt="pagination"
+            class="img-down"
+          />
         </div>
       </section>
 
@@ -550,7 +573,19 @@
             <button type="submit" class="btn-sub">Subscribe</button>
           </div>
 
-          <p class="msg-success">"PLEASE ENTER YOUR EMAIL"</p>
+          <div class="email-success">
+            <img
+              src="./public/svg/tick-blue.svg"
+              alt="tick-blue"
+              class="img-tick-blue"
+            />
+            <img
+              src="./public/images/cross-red.png"
+              alt="tick-blue"
+              class="img-tick-red"
+            />
+            <span class="msg-success">"PLEASE ENTER YOUR MAIL"</span>
+          </div>
         </div>
       </section>
     </main>
@@ -658,7 +693,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="./slick.min.js"></script>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
