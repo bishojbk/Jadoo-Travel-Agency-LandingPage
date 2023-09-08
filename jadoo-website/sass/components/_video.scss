@@ -1,0 +1,23 @@
+.video-section {
+  position: absolute;
+  z-index: 999;
+  top: 10vh;
+  left: 4vw;
+
+  .black-cross {
+    position: absolute;
+    top: -25px;
+    right: -10px;
+    cursor: pointer;
+    z-index: 999;
+
+    @include responsive(nsm) {
+      right: -10px;
+    }
+  }
+
+  iframe {
+    height: 80vh;
+    width: 90vw;
+  }
+}

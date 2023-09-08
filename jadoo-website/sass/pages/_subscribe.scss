@@ -1,6 +1,4 @@
 .subscribe-section {
-  padding: 100px 0;
-
   .stars {
     position: absolute;
     bottom: -72px;
@@ -8,7 +6,7 @@
 
     @include responsive(lg) {
       width: 80px;
-      right: -20px;
+      right: -5px;
       bottom: -40px;
       z-index: -1;
     }
@@ -21,12 +19,14 @@
     z-index: 5;
 
     @include responsive(lg) {
-      width: 50px;
-      top: -23px;
+      width: 40px;
+      top: -20px;
+      right: -10px;
     }
 
     @include responsive(xsm) {
-      width: 50px;
+      width: 40px;
+      right: -10px;
     }
   }
 
@@ -177,9 +177,13 @@
         text-align: left;
       }
     }
+
+    @include responsive(lg) {
+      padding: 20px 0;
+    }
   }
 
   @include responsive(lg) {
-    padding: 40px;
+    padding: 16px;
   }
 }

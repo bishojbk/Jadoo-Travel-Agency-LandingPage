@@ -1,5 +1,4 @@
 .services-section {
-  padding: 50px 0 100px;
   position: relative;
 
   .container {
@@ -88,6 +87,6 @@
   }
 
   @include responsive(lg) {
-    padding: 40px;
+    padding: 16px;
   }
 }

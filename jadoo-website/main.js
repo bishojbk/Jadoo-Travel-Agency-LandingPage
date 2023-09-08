@@ -8,6 +8,11 @@ const crossImg = document.querySelector(".img-cross");
 const hamMenuNav = document.querySelector(".mob-nav-show");
 const successTick = document.querySelector(".img-tick-blue");
 const failTick = document.querySelector(".img-tick-red");
+const header = document.querySelector(".header");
+const bgBlack = document.querySelector(".bg-black");
+const videoPlayer = document.querySelector(".video-section");
+const imgPlay = document.querySelector(".img-play");
+const crossBlack = document.querySelector(".black-cross");
 
 hamMenu.addEventListener("click", () => {
   document.body.classList.add("mobile-nav-show");
@@ -24,6 +29,12 @@ function isValidEmail(email) {
 }
 
 subBtn.addEventListener("click", () => {
+  msgSuccess.classList.remove("success");
+  msgSuccess.classList.remove("fail");
+  msgSuccess.style.visibility = "hidden";
+  successTick.style.display = "none";
+  failTick.style.display = "none";
+
   const email = document.querySelector(".email").value;
   msgSuccess.style.visibility = "visible";
 
@@ -36,14 +47,6 @@ subBtn.addEventListener("click", () => {
     msgSuccess.textContent = "Sorry! We couldnt find your email.";
     failTick.style.display = "block";
   }
-
-  setTimeout(function () {
-    msgSuccess.classList.remove("success");
-    msgSuccess.classList.remove("fail");
-    msgSuccess.style.visibility = "hidden";
-    successTick.style.display = "none";
-    failTick.style.display = "none";
-  }, 5000);
 });
 
 input.addEventListener("click", () => {
@@ -56,3 +59,27 @@ var splide = new Splide(".splide", {
 });
 
 splide.mount();
+
+window.addEventListener("scroll", function () {
+  var scrollY = window.scrollY || window.pageYOffset;
+
+  if (scrollY > 1) {
+    header.classList.add("header-background");
+  }
+
+  if (scrollY < 1) {
+    header.classList.remove("header-background");
+  }
+});
+
+imgPlay.addEventListener("click", () => {
+  videoPlayer.classList.add("show");
+  bgBlack.classList.add("show");
+  document.body.classList.add("no-scroll");
+});
+
+crossBlack.addEventListener("click", () => {
+  videoPlayer.classList.remove("show");
+  bgBlack.classList.remove("show");
+  document.body.classList.remove("no-scroll");
+});

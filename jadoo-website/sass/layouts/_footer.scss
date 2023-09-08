@@ -1,6 +1,6 @@
 .footer-section {
-  padding: 100px 0 40px;
   position: relative;
+  padding: 100px 0 40px;
 
   .ellipse-section {
     position: absolute;
@@ -35,9 +35,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 0 35px;
 
     .footer-name {
-      margin-top: -50px;
+      margin-top: -70px;
 
       .lg-header {
         font-size: 44px;
@@ -154,9 +155,17 @@
       }
 
       .xsm-header {
+        margin-top: 30px;
         color: #5e6282;
         font-weight: 500;
         line-height: 124.5%;
+      }
+
+      .img-google {
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+        }
       }
 
       @include responsive(lg) {
@@ -175,7 +184,7 @@
   }
 
   .footer-bottom {
-    padding: 50px 0 0;
+    padding: 35px 0 0;
     text-align: center;
 
     @include responsive(lg) {
@@ -185,6 +194,6 @@
   }
 
   @include responsive(lg) {
-    padding: 40px;
+    padding: 16px;
   }
 }

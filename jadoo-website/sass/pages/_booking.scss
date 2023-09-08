@@ -1,6 +1,4 @@
 .booking-section {
-  padding: 100px 0;
-
   .booking-wrapper {
     display: grid;
     grid-template-areas: "first second";
@@ -147,7 +145,7 @@
         border-radius: 26px;
         background: #fff;
         box-shadow: var(--box-shadow);
-        margin: 50px 0;
+        margin: 50px 0 0;
         padding: 30px;
 
         .img-girlstanding-section {
@@ -215,6 +213,6 @@
   }
 
   @include responsive(lg) {
-    padding: 40px;
+    padding: 16px;
   }
 }

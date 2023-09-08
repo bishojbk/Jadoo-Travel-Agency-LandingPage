@@ -11,11 +11,11 @@
   }
 
   @include responsive(sm) {
-    height: calc((18rem - 0px) - 0px) !important;
+    height: calc((16rem - 0px) - 0px) !important;
   }
 
   @include responsive(nsm) {
-    height: calc((22rem - 0px) - 0px) !important;
+    height: calc((19rem - 0px) - 0px) !important;
   }
 }
 
@@ -24,8 +24,8 @@
   position: absolute !important;
   top: 50% !important;
 
-  @include responsive(nsm) {
-    top: 45% !important;
+  @include responsive(lg) {
+    display: none !important;
   }
 }
 
@@ -70,6 +70,7 @@
 
   @include responsive(lg) {
     left: 0% !important;
+    top: 105% !important;
   }
 }
 

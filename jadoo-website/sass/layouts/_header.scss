@@ -2,13 +2,15 @@
   position: absolute;
   width: 100%;
   z-index: 1;
+  position: fixed;
+  transition: all 0.4s ease;
+  padding: 40px 0;
 
   .header-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 40px 0;
 
     .container {
       position: relative;

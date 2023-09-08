@@ -1,6 +1,4 @@
 .company-section {
-  padding: 100px 0;
-
   .company-wrapper {
     display: flex;
     align-items: center;
@@ -48,6 +46,10 @@
     }
   }
   @include responsive(lg) {
-    padding: 40px;
+    padding: 40px 16px 16px;
+  }
+
+  @include responsive(xsm) {
+    padding: 16px;
   }
 }
