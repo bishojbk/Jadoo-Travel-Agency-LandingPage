@@ -16,4 +16,10 @@
       @content;
     }
   }
+
+  @if $breakpoint == nsm {
+    @media (max-width: 490px) {
+      @content;
+    }
+  }
 }

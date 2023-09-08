@@ -1,36 +1,53 @@
 .company-section {
-  display: flex;
-  padding: 200px 0 100px;
-  align-items: center;
-  justify-content: space-between;
+  padding: 100px 0;
 
-  .images-wrapper {
-    cursor: pointer;
-    width: 140px;
-    height: 100px;
-    transition: transform 0.3s ease-in-out;
-    background-color: #fff;
-    position: relative;
-    padding: 0px 30px;
-    overflow: hidden; /* Hide overflow content */
+  .company-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    img {
-      width: 100%;
-      height: 100%;
-      mix-blend-mode: luminosity;
+    .images-wrapper {
+      cursor: pointer;
+      width: 140px;
+      height: 100px;
+      transition: transform 0.3s ease-in-out;
+      background-color: #fff;
+      padding: 0px 30px;
+      overflow: hidden;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: luminosity;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: var(--box-shadow);
+        background-color: transparent;
+      }
     }
 
-    &:hover {
-      transform: scale(1.02);
-      border-radius: 10px;
-      box-shadow: var(--box-shadow);
-      background-color: transparent;
+    @include responsive(lg) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include responsive(sm) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      place-items: center;
+    }
+
+    @include responsive(nsm) {
+      padding: 50px 30px;
+      display: grid;
+      grid-template-columns: 1fr;
     }
   }
-
   @include responsive(lg) {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 30px;
+    padding: 40px;
   }
 }

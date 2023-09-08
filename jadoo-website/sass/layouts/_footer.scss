@@ -1,5 +1,5 @@
-.footer-wrapper {
-  padding: 100px 0 50px;
+.footer-section {
+  padding: 100px 0 40px;
   position: relative;
 
   .ellipse-section {
@@ -185,7 +185,6 @@
   }
 
   @include responsive(lg) {
-    padding: 20px 30px 0;
-    // display: none;
+    padding: 40px;
   }
 }

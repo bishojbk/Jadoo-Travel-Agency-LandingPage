@@ -1,4 +1,4 @@
-.services-wrapper {
+.services-section {
   padding: 50px 0 100px;
   position: relative;
 
@@ -43,8 +43,6 @@
       background: #fff;
 
       &:hover {
-        padding: 0 30px;
-        border-radius: 36px;
         box-shadow: var(--box-shadow);
       }
     }
@@ -67,6 +65,10 @@
         z-index: -1;
         bottom: -50px;
         left: -70px;
+
+        @include responsive(lg) {
+          display: none;
+        }
       }
     }
 
@@ -86,6 +88,6 @@
   }
 
   @include responsive(lg) {
-    padding: 20px 30px;
+    padding: 40px;
   }
 }

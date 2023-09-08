@@ -1,34 +1,13 @@
 const input = document.querySelector(".email");
 const emailImage = document.querySelector(".img-email");
-const downArrow = document.querySelector(".img-down");
-const upArrow = document.querySelector(".img-up");
-const cardFirst = document.querySelector(".card1");
-const cardSecond = document.querySelector(".card2");
-const cardThird = document.querySelector(".card3");
 const msgSuccess = document.querySelector(".msg-success");
 const subBtn = document.querySelector(".btn-sub");
 const hamMenuItems = document.querySelector(".ham-menu-items");
 const hamMenu = document.querySelector(".navbar-hamburger-menu");
-const bgBlack = document.querySelector(".background-black");
 const crossImg = document.querySelector(".img-cross");
 const hamMenuNav = document.querySelector(".mob-nav-show");
 const successTick = document.querySelector(".img-tick-blue");
 const failTick = document.querySelector(".img-tick-red");
-
-downArrow.addEventListener("click", () => {
-  const cardFirstPosition = cardFirst.getBoundingClientRect();
-  const cardSecondPosition = cardSecond.getBoundingClientRect();
-  const cardThirdPosition = cardThird.getBoundingClientRect();
-
-  const cardFirstTop = cardFirst.getBoundingClientRect().top;
-  const cardFirstLeft = cardFirst.getBoundingClientRect().left;
-
-  console.log(cardFirstTop, cardSecond.getBoundingClientRect().top);
-  cardSecond.style.top = cardFirstTop;
-
-  console.log(cardSecond.style.top);
-  // cardSecond.style.left = `${cardFirstLeft}px`;
-});
 
 hamMenu.addEventListener("click", () => {
   document.body.classList.add("mobile-nav-show");
@@ -70,3 +49,10 @@ subBtn.addEventListener("click", () => {
 input.addEventListener("click", () => {
   emailImage.style.display = "none";
 });
+
+var splide = new Splide(".splide", {
+  direction: "ttb",
+  height: "10rem",
+});
+
+splide.mount();

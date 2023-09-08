@@ -25,10 +25,15 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
   </head>
   <body>
     <div class="ham-menu-items">
-      <div class="banner-bg"></div>
+      <div class="banner-bg-left"></div>
+      <div class="banner-bg-right"></div>
       <img src="./public/svg/cross.svg" alt="cross" class="img-cross" />
       <ul>
         <li class="ham__items">
@@ -61,7 +66,7 @@
 
     <!--HEADER SECTION-->
     <header class="header">
-      <div class="header-wrapper container">
+      <div class="header-section container">
         <div class="header-logo">
           <img src="./public/svg/logo.svg" alt="company-logo" />
         </div>
@@ -111,7 +116,7 @@
     <main>
       <!--BANNER SECTION-->
 
-      <section class="banner-wrapper">
+      <section class="banner-section">
         <div class="banner-bg"></div>
 
         <div class="container">
@@ -158,7 +163,7 @@
       </section>
 
       <!--SERVICES SECTION-->
-      <section class="services-wrapper">
+      <section class="services-section">
         <div class="container">
           <img src="./public/svg/stars.svg" alt="stars" class="img-stars" />
           <div class="services-header">
@@ -235,7 +240,7 @@
 
       <!--DESTINATION SECTION-->
 
-      <section class="destination-wrapper">
+      <section class="destination-section">
         <div class="container">
           <div class="destination-header">
             <span class="header-tag">Top Selling</span>
@@ -244,11 +249,9 @@
 
           <div class="destination-grid">
             <div class="grid-item item1">
-              <img
-                src="./public/images/tower1.png"
-                alt="tower1"
-                class="img-tower"
-              />
+              <div class="img-tower">
+                <img src="./public/images/tower1.png" alt="tower1" />
+              </div>
 
               <div class="place-details">
                 <div class="img-details">
@@ -264,11 +267,9 @@
             </div>
 
             <div class="grid-item item2">
-              <img
-                src="./public/images/tower2.png"
-                alt="tower1"
-                class="img-tower"
-              />
+              <div class="img-tower">
+                <img src="./public/images/tower2.png" alt="tower1" />
+              </div>
 
               <div class="place-details">
                 <div class="img-details">
@@ -284,11 +285,9 @@
             </div>
 
             <div class="grid-item item3">
-              <img
-                src="./public/images/tower3.png"
-                alt="tower1"
-                class="img-tower"
-              />
+              <div class="img-tower">
+                <img src="./public/images/tower3.png" alt="tower1" />
+              </div>
               <div class="place-details">
                 <div class="img-details">
                   <p class="header-tag">Full Europe</p>
@@ -306,8 +305,8 @@
       </section>
 
       <!--BOOKING SECTION-->
-      <section class="booking-wrapper">
-        <div class="container booking-section">
+      <section class="booking-section">
+        <div class="container booking-wrapper">
           <div class="booking-section-text">
             <div class="booking-header">
               <span class="header-tag">Easy and Fast</span>
@@ -415,8 +414,8 @@
       </section>
 
       <!--TESTIMONIALS SECTION-->
-      <section class="testimonials-wrapper">
-        <div class="container testimonials-section">
+      <section class="testimonials-section">
+        <div class="container testimonials-wrapper">
           <div class="testimonials-section-text">
             <div class="testimonials-header">
               <span class="header-tag">TESTIMONIALS </span>
@@ -425,90 +424,79 @@
           </div>
 
           <div class="testimonials-section-people">
-            <div class="cards" id="myCarousel">
-              <div class="card card1">
-                <div class="card-image">
-                  <img
-                    src="./public/images/Man.png"
-                    alt="man"
-                    class="img-man"
-                  />
-                </div>
-                <div class="info-section">
-                  <p class="details info">
-                    “On the Windows talking painted pasture yet its express
-                    parties use. Sure last upon he same as knew next. Of
-                    believed or diverted no.”
-                  </p>
-                  <span class="details name">Mike taylor</span>
-                  <p class="details place">Lahore, Pakistan</p>
-                </div>
+            <section class="splide" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="card card1">
+                      <div class="card-image">
+                        <img
+                          src="./public/images/Man.png"
+                          alt="man"
+                          class="img-man"
+                        />
+                      </div>
+                      <div class="info-section">
+                        <p class="details info">
+                          “On the Windows talking painted pasture yet its
+                          express parties use. Sure last upon he same as knew
+                          next. Of believed or diverted no.”
+                        </p>
+                        <span class="details name">Mike taylor</span>
+                        <p class="details place">Lahore, Pakistan</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="card card2">
+                      <div class="card-image">
+                        <img
+                          src="./public/images/eminem.jpg"
+                          alt="man"
+                          class="img-man"
+                        />
+                      </div>
+                      <div class="info-section">
+                        <p class="details info">
+                          “On the Windows talking painted pasture yet its
+                          express parties use. Sure last upon he same as knew
+                          next. Of believed or diverted no.”
+                        </p>
+                        <span class="details">EMINEM</span>
+                        <p class="details place">THE GOAT</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="card card3">
+                      <div class="card-image">
+                        <img
+                          src="./public/images/kendrick.jpg"
+                          alt="man"
+                          class="img-man"
+                        />
+                      </div>
+                      <div class="info-section">
+                        <p class="details info">
+                          “On the Windows talking painted pasture yet its
+                          express parties use. Sure last upon he same as knew
+                          next. Of believed or diverted no.”
+                        </p>
+                        <span class="details">Kendrick Lamar</span>
+                        <p class="details place">CEO of Red Button</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-
-              <div class="card card2">
-                <div class="card-image">
-                  <img
-                    src="./public/images/eminem.jpg"
-                    alt="man"
-                    class="img-man"
-                  />
-                </div>
-                <div class="info-section">
-                  <p class="details info">
-                    “On the Windows talking painted pasture yet its express
-                    parties use. Sure last upon he same as knew next. Of
-                    believed or diverted no.”
-                  </p>
-                  <span class="details">EMINEM</span>
-                  <p class="details place">THE GOAT</p>
-                </div>
-              </div>
-
-              <div class="card card3">
-                <div class="card-image">
-                  <img
-                    src="./public/images/kendrick.jpg"
-                    alt="man"
-                    class="img-man"
-                  />
-                </div>
-                <div class="info-section">
-                  <p class="details info">
-                    “On the Windows talking painted pasture yet its express
-                    parties use. Sure last upon he same as knew next. Of
-                    believed or diverted no.”
-                  </p>
-                  <span class="details">Kendrick Lamar</span>
-                  <p class="details place">CEO of Red Button</p>
-                </div>
-              </div>
-            </div>
+            </section>
           </div>
-
-          <div class="dots-section">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-        </div>
-
-        <div class="pagination">
-          <img
-            src="./public/images/upload.png"
-            alt="pagination"
-            class="img-up opacity"
-          />
-          <img
-            src="./public/images/down.png"
-            alt="pagination"
-            class="img-down"
-          />
         </div>
       </section>
 
       <!--COMPANIES SECTION-->
-      <section class="company-wrapper container">
-        <div class="company-section">
+      <section class="company-section container">
+        <div class="company-wrapper">
           <div class="images-wrapper">
             <img
               src="./public/images/axiom.png"
@@ -552,7 +540,7 @@
       </section>
 
       <!--SUBSCRIBE SECTION-->
-      <section class="subscribe-wrapper">
+      <section class="subscribe-section">
         <div class="email-section container">
           <img src="./public/svg/stars2.svg" alt="stars" class="stars" />
           <img src="./public/svg/bluearrow.svg" alt="arrow" class="bluearrow" />
@@ -563,7 +551,7 @@
             offers about Cobham
           </p>
 
-          <div class="subscribe-section">
+          <div class="subscribe-wrapper">
             <div class="input-section">
               <img src="./public/svg/email.svg" alt="email" class="img-email" />
               <label for="email">Email</label>
@@ -590,7 +578,7 @@
     </main>
 
     <!--FOOTER SECTION-->
-    <footer class="footer-wrapper">
+    <footer class="footer-section">
       <div class="ellipse-section"></div>
       <div class="container">
         <section class="footer-top">
@@ -691,7 +679,11 @@
       </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
 
     <script type="module" src="/main.js"></script>
   </body>

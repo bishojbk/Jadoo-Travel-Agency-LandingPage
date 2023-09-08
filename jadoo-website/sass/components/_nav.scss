@@ -82,14 +82,26 @@
   }
 }
 
-.banner-bg {
+.banner-bg-left {
   position: absolute;
   opacity: 0.3;
   background: #d5aee4;
   filter: blur(50px);
-  width: 100vw;
+  width: 30vw;
   height: 100vh;
   left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.banner-bg-right {
+  position: absolute;
+  opacity: 0.3;
+  background: #d5aee4;
+  filter: blur(50px);
+  width: 30vw;
+  height: 100vh;
+  right: 0;
   top: 0;
   z-index: -1;
 }

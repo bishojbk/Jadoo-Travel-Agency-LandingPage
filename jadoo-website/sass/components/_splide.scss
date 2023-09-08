@@ -1,0 +1,83 @@
+.splide__track {
+  padding-top: 20px !important;
+  padding-bottom: 0px;
+  height: calc((18rem - 0px) - 0px) !important;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+
+  @include responsive(lg) {
+    height: calc((15rem - 0px) - 0px) !important;
+  }
+
+  @include responsive(sm) {
+    height: calc((18rem - 0px) - 0px) !important;
+  }
+
+  @include responsive(nsm) {
+    height: calc((22rem - 0px) - 0px) !important;
+  }
+}
+
+.splide__arrow {
+  background: transparent !important;
+  position: absolute !important;
+  top: 50% !important;
+
+  @include responsive(nsm) {
+    top: 45% !important;
+  }
+}
+
+.splide__arrows--ttb .splide__arrow {
+  left: 120% !important;
+  transform: translate(-50%);
+
+  @include responsive(lg) {
+    left: 98% !important;
+  }
+
+  @include responsive(sm) {
+    left: 95% !important;
+  }
+}
+
+.splide__arrows--ttb .splide__arrow--prev {
+  top: 6em !important;
+
+  @include responsive(nsm) {
+    top: 9em !important;
+  }
+}
+
+.splide__pagination__page {
+  height: 13px !important;
+  width: 13px !important;
+  margin: 0px !important;
+  opacity: 0.7;
+  padding: 0;
+  position: relative;
+  transition: transform 0.2s linear;
+}
+
+.splide__pagination {
+  position: absolute !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 30px;
+  top: 100% !important;
+  left: -280% !important;
+
+  @include responsive(lg) {
+    left: 0% !important;
+  }
+}
+
+.splide__pagination__page.is-active {
+  background: black !important;
+  transform: scale(1.1) !important;
+}
+
+.splide__slide {
+  height: 100px;
+}

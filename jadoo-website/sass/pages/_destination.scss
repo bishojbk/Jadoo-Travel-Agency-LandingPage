@@ -1,4 +1,4 @@
-.destination-wrapper {
+.destination-section {
   padding: 100px 0;
 
   .destination-header {
@@ -29,8 +29,25 @@
 
   .img-tower {
     width: 100%;
+    width: 314px;
+    height: 457px;
+    flex-shrink: 0;
     object-fit: cover;
     border-radius: 24px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include responsive(sm) {
+      width: 98%;
+    }
+
+    @include responsive(nsm) {
+      width: 100%;
+    }
   }
 
   .place-details {
@@ -38,8 +55,16 @@
     border-radius: 0px 0px 24px 24px;
     background: #fdfdfd;
     bottom: 0;
-    width: 100%;
+    width: 314px;
     box-shadow: var(--box-shadow);
+
+    @include responsive(sm) {
+      width: 98%;
+    }
+
+    @include responsive(nsm) {
+      width: 100%;
+    }
   }
 
   .img-details {
@@ -68,7 +93,7 @@
       position: absolute;
       content: url("../../public/svg/wire.svg");
       bottom: 30px;
-      right: -5px;
+      right: 30px;
       z-index: -1;
 
       @include responsive(lg) {
@@ -78,6 +103,6 @@
   }
 
   @include responsive(lg) {
-    padding: 20px 30px;
+    padding: 40px;
   }
 }

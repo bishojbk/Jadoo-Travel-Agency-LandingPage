@@ -1,6 +1,5 @@
-.banner-wrapper {
+.banner-section {
   position: relative;
-
   .container {
     position: relative;
   }
@@ -174,6 +173,6 @@
   }
 
   @include responsive(lg) {
-    padding: 20px 30px;
+    padding: 40px 40px;
   }
 }

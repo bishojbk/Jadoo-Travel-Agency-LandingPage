@@ -1,4 +1,4 @@
-.subscribe-wrapper {
+.subscribe-section {
   padding: 100px 0;
 
   .stars {
@@ -21,7 +21,7 @@
     z-index: 5;
 
     @include responsive(lg) {
-      width: 80px;
+      width: 50px;
       top: -23px;
     }
 
@@ -34,7 +34,7 @@
     text-align: center;
     border-radius: 129px 20px 20px 20px;
     background: rgba(223, 215, 249, 0.2);
-    padding: 50px 0 35px;
+    padding: 50px 0 0;
     position: relative;
 
     .rings {
@@ -74,11 +74,12 @@
       }
     }
 
-    .subscribe-section {
+    .subscribe-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 50px;
+      padding: 50px 0 0;
 
       .input-section {
         position: relative;
@@ -158,6 +159,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0 50px;
 
     .img-tick-blue {
       display: none;
@@ -178,6 +180,6 @@
   }
 
   @include responsive(lg) {
-    padding: 20px 30px;
+    padding: 40px;
   }
 }

@@ -1,8 +1,8 @@
-.testimonials-wrapper {
+.testimonials-section {
   padding: 100px 0;
   position: relative;
 
-  .testimonials-section {
+  .testimonials-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
@@ -33,25 +33,19 @@
       }
     }
   }
-
-  .cards {
+  .testimonials-section-people {
     position: relative;
   }
-  .card {
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: var(--box-shadow);
-    width: 580px;
-    transition: all 1s ease-in;
 
+  .card {
     .card-image {
       width: 68px;
       height: 68px;
       border-radius: 50%;
       overflow: hidden;
-      top: -30px;
-      left: -30px;
       position: absolute;
+      left: 15px;
+      top: 15px;
 
       img {
         width: 100%;
@@ -69,7 +63,7 @@
     }
 
     .info-section {
-      padding: 20px 30px;
+      padding: 70px 0px 30px 50px;
 
       .info {
         margin: 20px 0 50px;
@@ -89,6 +83,14 @@
       .place {
         margin: 5px 0 0;
       }
+
+      @include responsive(lg) {
+        padding: 70px 0px 10px 50px;
+      }
+
+      @include responsive(sm) {
+        padding: 70px 0px 10px 50px;
+      }
     }
 
     @include responsive(lg) {
@@ -96,64 +98,7 @@
     }
   }
 
-  .card1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  .card2 {
-    position: absolute;
-    top: 90px;
-    z-index: -1;
-    left: 50px;
-  }
-
-  .card3 {
-    position: absolute;
-    top: 90px;
-    z-index: -2;
-    left: 50px;
-  }
-
-  .dots-section {
-    display: flex;
-    cursor: pointer;
-    gap: 30px;
-
-    .dot {
-      background-color: #e5e5e5;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-    }
-
-    .active {
-      background-color: black;
-    }
-  }
-
-  .pagination {
-    position: absolute;
-    right: 50px;
-    bottom: 200px;
-    cursor: pointer;
-
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-
-    .opacity {
-      opacity: 0.5;
-    }
-  }
-
   @include responsive(lg) {
-    width: 100%;
-    display: none;
-  }
-
-  @include responsive(lg) {
-    padding: 20px 30px;
+    padding: 40px;
   }
 }
