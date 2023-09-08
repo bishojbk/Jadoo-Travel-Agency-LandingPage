@@ -36,16 +36,15 @@
     .grid-item {
       cursor: pointer;
       padding: 0 30px;
-      transition: transform 0.2s ease-in-out;
       display: flex;
       flex-direction: column;
       gap: 50px;
+      border-radius: 36px;
+      background: #fff;
 
       &:hover {
-        transform: scale(1.01);
         padding: 0 30px;
         border-radius: 36px;
-        background: #fff;
         box-shadow: var(--box-shadow);
       }
     }
@@ -68,11 +67,6 @@
         z-index: -1;
         bottom: -50px;
         left: -70px;
-        // display: none;
-
-        @include responsive(lg) {
-          display: none;
-        }
       }
     }
 

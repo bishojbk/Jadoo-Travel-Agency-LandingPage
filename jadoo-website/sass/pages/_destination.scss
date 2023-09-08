@@ -28,13 +28,9 @@
   }
 
   .img-tower {
-    width: 90%;
+    width: 100%;
     object-fit: cover;
     border-radius: 24px;
-
-    @include responsive(lg) {
-      width: 90%;
-    }
   }
 
   .place-details {
@@ -42,12 +38,8 @@
     border-radius: 0px 0px 24px 24px;
     background: #fdfdfd;
     bottom: 0;
-    width: 90%;
+    width: 100%;
     box-shadow: var(--box-shadow);
-
-    @include responsive(lg) {
-      width: 90%;
-    }
   }
 
   .img-details {
@@ -78,6 +70,10 @@
       bottom: 30px;
       right: -5px;
       z-index: -1;
+
+      @include responsive(lg) {
+        display: none;
+      }
     }
   }
 
