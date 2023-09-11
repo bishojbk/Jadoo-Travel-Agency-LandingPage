@@ -32,7 +32,7 @@ function isValidEmail(email) {
   return emailPattern.test(email);
 }
 
-subBtn.addEventListener("click", () => {
+function email() {
   const email = document.querySelector(".email").value;
   successMsg.classList.remove("opacity");
   failMsg.classList.remove("opacity");
@@ -50,10 +50,20 @@ subBtn.addEventListener("click", () => {
 
     console.log("hey");
   }
+}
+
+subBtn.addEventListener("click", () => {
+  email();
 });
 
 input.addEventListener("click", () => {
   emailImage.style.display = "none";
+});
+
+input.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    email();
+  }
 });
 
 var splide = new Splide(".splide", {

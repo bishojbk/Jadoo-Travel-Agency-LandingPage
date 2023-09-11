@@ -1,4 +1,10 @@
 @mixin responsive($breakpoint) {
+  @if $breakpoint == bg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
   @if $breakpoint == lg {
     @media (max-width: 992px) {
       @content;
