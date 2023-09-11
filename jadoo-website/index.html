@@ -31,9 +31,38 @@
     />
   </head>
   <body>
+    <!--Button To Top-->
+
+    <div class="container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="red"
+        id="btn-back-to-top"
+      >
+        <g mask="url(#mask0_110_4708)">
+          <path
+            d="M11 20V7.825L5.4 13.425L4 12L12 4L20 12L18.6 13.425L13 7.825V20H11Z"
+            fill="white"
+          />
+        </g>
+      </svg>
+    </div>
+
     <div class="ham-menu-items">
-      <div class="banner-bg-left"></div>
-      <div class="banner-bg-right"></div>
+      <img
+        src="./public/svg/diamond.svg"
+        class="img-diamond"
+        alt="bg-diamond"
+      />
+
+      <img
+        src="./public/svg/diamond.svg"
+        class="img-diamond1"
+        alt="bg-diamond"
+      />
       <img src="./public/svg/cross.svg" alt="cross" class="img-cross" />
       <ul>
         <li class="ham__items">
@@ -69,6 +98,7 @@
       <iframe
         src="https://www.youtube.com/embed/gK07p6RGbtg"
         title="youtube-video"
+        class="video"
       >
       </iframe>
     </div>
@@ -572,17 +602,21 @@
           </div>
 
           <div class="email-success">
-            <img
-              src="./public/svg/tick-blue.svg"
-              alt="tick-blue"
-              class="img-tick-blue"
-            />
-            <img
-              src="./public/images/cross-red.png"
-              alt="tick-blue"
-              class="img-tick-red"
-            />
-            <span class="msg-success">"PLEASE ENTER YOUR MAIL"</span>
+            <span class="success-msg">
+              <img
+                src="./public/images/accept.png"
+                alt="tick-blue"
+                class="img-tick-blue"
+              />
+              Thank you for subscribing to us.
+            </span>
+            <span class="success-fail">
+              <img
+                src="./public/images/warning.png"
+                alt="tick-blue"
+                class="img-tick-red"
+              />Please, enter a valid email address.
+            </span>
           </div>
         </div>
       </section>

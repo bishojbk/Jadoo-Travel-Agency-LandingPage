@@ -80,30 +80,31 @@
       display: none;
     }
   }
-}
 
-.banner-bg-left {
-  position: absolute;
-  opacity: 0.3;
-  background: #d5aee4;
-  filter: blur(50px);
-  width: 30vw;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
+  .img-diamond {
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    right: 0;
+    left: 0;
+    transform: rotate(270deg);
+  }
 
-.banner-bg-right {
-  position: absolute;
-  opacity: 0.3;
-  background: #d5aee4;
-  filter: blur(50px);
-  width: 30vw;
-  height: 100vh;
-  right: 0;
-  top: 0;
-  z-index: -1;
+  .img-diamond1 {
+    position: absolute;
+    z-index: -12;
+    bottom: -100px;
+    right: -100px;
+    transform: rotate(90deg);
+
+    @include responsive(lg) {
+      right: -200px;
+    }
+
+    @include responsive(sm) {
+      right: -250px;
+    }
+  }
 }
 
 .mobile-nav-show {
