@@ -25,6 +25,24 @@
   }
 }
 
+// .mob-nav-show {
+//   display: block;
+//   gap: 0;
+
+//   .ham-menu-line:first-child {
+//     // display: none;
+//     rotate: 145deg;
+//   }
+
+//   .ham-menu-line:last-child {
+//     rotate: 35deg;
+//   }
+
+//   .ham-menu-line:nth-child(2) {
+//     display: none;
+//   }
+// }
+
 .ham-menu-items {
   position: fixed;
   background: #fff;
@@ -67,12 +85,14 @@
       font-size: 17px;
     }
   }
+
   .img-cross {
     position: absolute;
     right: 50px;
     top: 40px;
     width: 30px;
     height: 25px;
+    cursor: pointer;
   }
 
   .ham__select {
@@ -106,6 +126,7 @@
     bottom: 0px;
     z-index: -3;
   }
+
   .banner-bg2 {
     position: absolute;
     opacity: 0.4;
@@ -118,6 +139,7 @@
     top: 0px;
     z-index: -3;
   }
+
   .banner-bg3 {
     position: absolute;
     opacity: 0.4;
@@ -130,10 +152,6 @@
     bottom: 0px;
     z-index: -3;
   }
-}
-
-.mobile-nav-show {
-  overflow: hidden;
 }
 
 .mobile-nav-show .ham-menu-items {

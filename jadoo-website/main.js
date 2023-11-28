@@ -6,7 +6,6 @@ const hamMenuItems = document.querySelector(".ham-menu-items");
 const hamMenu = document.querySelector(".navbar-hamburger-menu");
 const crossImg = document.querySelector(".img-cross");
 const hamMenuNav = document.querySelector(".mob-nav-show");
-
 const header = document.querySelector(".header");
 const bgBlack = document.querySelector(".bg-black");
 const videoPlayer = document.querySelector(".video-section");
@@ -19,16 +18,17 @@ const iframe = document.querySelector(".video");
 const play = document.querySelector(".btn-play");
 
 hamMenu.addEventListener("click", () => {
-  document.body.classList.add("mobile-nav-show");
+  document.body.classList.toggle("mobile-nav-show");
+  // hamMenu.style.display = "none";
 });
 
 crossImg.addEventListener("click", () => {
   document.body.classList.remove("mobile-nav-show");
+  console.log("clicked on cross");
 });
 
 function isValidEmail(email) {
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
   return emailPattern.test(email);
 }
 
