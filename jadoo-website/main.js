@@ -19,12 +19,6 @@ const play = document.querySelector(".btn-play");
 
 hamMenu.addEventListener("click", () => {
   document.body.classList.toggle("mobile-nav-show");
-  // hamMenu.style.display = "none";
-});
-
-crossImg.addEventListener("click", () => {
-  document.body.classList.remove("mobile-nav-show");
-  console.log("clicked on cross");
 });
 
 function isValidEmail(email) {
